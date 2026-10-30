@@ -1,9 +1,9 @@
-# CMWM
+# Event-Structured Episodic Memory
 
-### Event-structured episodic memory for predictive models
+### Bounded memory for predictive world models
 
 What should a model retain from its experiences when it cannot remember everything?
-CMWM investigates whether meaningful event boundaries provide useful units for bounded
+This project investigates whether meaningful event boundaries provide useful units for bounded
 episodic storage. The current implementation is a **symbolic recurrent memory prototype**;
 the longer-term direction is a continual multimodal world model.
 
