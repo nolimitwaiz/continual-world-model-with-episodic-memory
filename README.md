@@ -1,11 +1,12 @@
-# Event-Structured Episodic Memory
+# Continual World Model with Episodic Memory
 
-### Bounded memory for predictive world models
+### Event-structured memory, fast adaptation, and learning across experiences
 
 What should a model retain from its experiences when it cannot remember everything?
-This project investigates whether meaningful event boundaries provide useful units for bounded
-episodic storage. The current implementation is a **symbolic recurrent memory prototype**;
-the longer-term direction is a continual multimodal world model.
+This project investigates a continual multimodal world model with event-structured episodic memory
+as a native component. The current implementation is a **symbolic recurrent memory prototype**
+testing whether meaningful event boundaries provide useful units for bounded storage. Online
+fast-weight adaptation and consolidation remain research goals, not validated capabilities.
 
 **Research status:** development evidence, not a completed foundation model or a confirmatory
 benchmark result. Correct event boundaries are supplied in the strongest completed comparison.
