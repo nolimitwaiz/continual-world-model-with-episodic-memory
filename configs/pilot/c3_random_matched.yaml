@@ -1,0 +1,12 @@
+extends: base.yaml
+
+experiment:
+  name: pilot1000_c3_random_matched
+
+prototype1:
+  boundary:
+    name: random_matched
+    threshold: null
+    match_segment_length_distribution: true
+  memory:
+    name: event

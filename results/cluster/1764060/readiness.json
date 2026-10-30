@@ -1,0 +1,107 @@
+{
+  "artifact_type": "cmwm_chen_behavioral_readiness_v1",
+  "checks": {
+    "filmfest_events": {
+      "expected": 202,
+      "observed": 202,
+      "passed": true
+    },
+    "filmfest_published_cohort_rows": {
+      "expected": 2778,
+      "observed": 2778,
+      "passed": true
+    },
+    "filmfest_recall_rows": {
+      "expected": 3030,
+      "observed": 3030,
+      "passed": true
+    },
+    "filmfest_stories": {
+      "expected": 10,
+      "observed": 10,
+      "passed": true
+    },
+    "filmfest_unique_event_ids": {
+      "expected": 202,
+      "observed": 202,
+      "passed": true
+    },
+    "sherlock_event_jsonl": {
+      "expected": 50,
+      "observed": 50,
+      "passed": true
+    },
+    "sherlock_recall_occurrences": {
+      "expected": 616,
+      "observed": 616,
+      "passed": true
+    },
+    "sherlock_scene_recall_rows": {
+      "expected": 850,
+      "observed": 850,
+      "passed": true
+    },
+    "sherlock_scenes": {
+      "expected": 50,
+      "observed": 50,
+      "passed": true
+    },
+    "sherlock_subjects": {
+      "expected": 17,
+      "observed": 17,
+      "passed": true
+    },
+    "sherlock_unique_event_ids": {
+      "expected": 50,
+      "observed": 50,
+      "passed": true
+    }
+  },
+  "claim_eligible": false,
+  "exploratory_predicted_graph": {
+    "path": "<CLUSTER_PATH>",
+    "permitted_role": "exploratory_only",
+    "present": true,
+    "sha256": "9e8418d7f0f0f5b273c13976af33d95dd305ddc86f4714309c2b74905919f8ce"
+  },
+  "files": {
+    "data/filmfest/normalized_events.csv": {
+      "bytes": 430944,
+      "sha256": "7b223fadd53b8937fc930504e3f40e91929443eb976d7a8a550581ab8809f7a0"
+    },
+    "data/filmfest/recall_matrix.csv": {
+      "bytes": 369251,
+      "sha256": "7f7b9aa51a6736a3226170b4a64474741215bfd046952a6a205cb567a28dbce4"
+    },
+    "data/sherlock/events.jsonl": {
+      "bytes": 153475,
+      "sha256": "a8b0e48341de7ff2d32cf0bdb7ea63fae1bd7d1d943e7b402ba45c4af4eac53b"
+    },
+    "data/sherlock/normalized_scenes.csv": {
+      "bytes": 119214,
+      "sha256": "cee4343dfa9158258c88c791841182a13c71119999a214858737e5c58d036d49"
+    },
+    "data/sherlock/recall_occurrences.csv": {
+      "bytes": 58459,
+      "sha256": "ce885d7992e862a923f80a5b00f76b6646b69683f2dc6f8b71d8c515f56286a2"
+    },
+    "data/sherlock/scene_recall_matrix.csv": {
+      "bytes": 61665,
+      "sha256": "bc070c3bed6d46c9f9292c410fa69a12975fa946b2e848f956b04a65e3b01df1"
+    }
+  },
+  "limitations": [
+    "No raw fMRI is checked or acquired by this audit.",
+    "Predicted causal edges are not independent human directed edges.",
+    "Readiness is not model-performance evidence."
+  ],
+  "passed": true,
+  "readiness": {
+    "filmfest_graph_free_behavioral": true,
+    "filmfest_human_directed_causal_graph": false,
+    "raw_fmri_acquired": false,
+    "sherlock_graph_free_behavioral": true,
+    "sherlock_human_directed_causal_graph": false
+  },
+  "source_project": "<CLUSTER_PATH>"
+}

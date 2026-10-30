@@ -1,0 +1,29 @@
+{
+  "bootstrap_resamples": 10000,
+  "confirmatory_gate_b_allowed": false,
+  "coverage": {
+    "target_questions": 52,
+    "target_stories": 8
+  },
+  "dense_failure_map": {
+    "ci95_story_bootstrap": [
+      -0.49378090766361493,
+      -0.2469606713653204
+    ],
+    "delta_long_low_minus_local_high": -0.3916083916083916,
+    "valid_bootstrap_resamples": 10000
+  },
+  "predicted_graph_advantage": {
+    "ci95_story_bootstrap": [
+      0.10144927536231885,
+      0.36065760910247774
+    ],
+    "independent_oracle": false,
+    "mean_predicted_minus_dense_target": 0.25641025641025644,
+    "valid_bootstrap_resamples": 10000
+  },
+  "scientific_status": "exploratory_predicted_graph_circular_diagnostic",
+  "seed": 20220811,
+  "training_performed": false,
+  "warning": "Question paths and predicted_causal retrieval use the same model-predicted graph; predicted advantage is not independent evidence."
+}

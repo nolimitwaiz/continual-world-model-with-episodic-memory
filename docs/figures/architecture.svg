@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="590" viewBox="0 0 1100 590" role="img" aria-label="Implemented symbolic memory prototype">
+<title>Implemented symbolic memory prototype</title><desc>C0–C4 vary memory organization; the backbone and training policy are controlled.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607083"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172C43} .small{fill:#526579}</style>
+<rect width="1100" height="590" fill="#FFFFFF"/>
+<text x="36" y="42" font-size="26" font-weight="700" text-anchor="start" style="fill:#172C43">Implemented symbolic memory prototype</text>
+<text x="36" y="72" font-size="16" font-weight="400" text-anchor="start" style="fill:#526579">C0–C4 vary memory organization; the backbone and training policy are controlled.</text>
+<rect x="36" y="120" width="245" height="84" rx="6" fill="#F0F4F8" stroke="none"/>
+<text x="51" y="151" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Symbolic observations</text>
+<text x="51" y="179" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">State + observed actions</text>
+<rect x="330" y="120" width="260" height="84" rx="6" fill="#F0F4F8" stroke="none"/>
+<text x="345" y="151" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Shared-design adapters</text>
+<text x="345" y="179" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">128-dimensional step vector</text>
+<rect x="650" y="120" width="365" height="84" rx="6" fill="#F0F4F8" stroke="none"/>
+<text x="665" y="151" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Local-context GRU</text>
+<text x="665" y="179" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">Hidden state resets between blocks</text>
+<line x1="281" y1="162" x2="320" y2="162" stroke="#DCE4EA" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="590" y1="162" x2="640" y2="162" stroke="#DCE4EA" stroke-width="1" marker-end="url(#arrow)"/>
+<rect x="650" y="275" width="365" height="84" rx="6" fill="#E7F4F2" stroke="none"/>
+<text x="665" y="306" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Grouping + key/value writer</text>
+<text x="665" y="334" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">Fixed / random / supplied events</text>
+<rect x="330" y="275" width="260" height="84" rx="6" fill="#E7F4F2" stroke="none"/>
+<text x="345" y="306" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Bounded episodic store</text>
+<text x="345" y="334" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">64 records · FIFO eviction</text>
+<rect x="36" y="275" width="245" height="84" rx="6" fill="#F0F4F8" stroke="none"/>
+<text x="51" y="306" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Question representation</text>
+<text x="51" y="334" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">Query encoder</text>
+<line x1="832" y1="204" x2="832" y2="265" stroke="#DCE4EA" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="650" y1="317" x2="600" y2="317" stroke="#DCE4EA" stroke-width="1" marker-end="url(#arrow)"/>
+<rect x="330" y="430" width="260" height="84" rx="6" fill="#F0F4F8" stroke="none"/>
+<text x="345" y="461" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Query-conditioned read</text>
+<text x="345" y="489" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">Retrieve up to four records</text>
+<rect x="650" y="430" width="365" height="84" rx="6" fill="#F0F4F8" stroke="none"/>
+<text x="665" y="461" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Answer head</text>
+<text x="665" y="489" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">Current context + retrieved records</text>
+<line x1="460" y1="359" x2="460" y2="420" stroke="#DCE4EA" stroke-width="1" marker-end="url(#arrow)"/>
+<polyline points="158,359 158,472 320,472" fill="none" stroke="#607083" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="590" y1="472" x2="640" y2="472" stroke="#DCE4EA" stroke-width="1" marker-end="url(#arrow)"/>
+<polyline points="1015,162 1052,162 1052,410 832,410 832,420" fill="none" stroke="#607083" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="36" y="556" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Oracle boundaries are supplied. Learned boundaries and multimodal transfer are not validated results.</text>
+</svg>

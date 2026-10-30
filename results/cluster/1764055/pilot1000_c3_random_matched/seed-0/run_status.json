@@ -1,0 +1,22 @@
+{
+  "artifact_type": "cmwm_training_status",
+  "completed_at": "2026-08-25T20:44:26.238634+00:00",
+  "condition": "random_matched",
+  "config_sha256": "4e80750f92ec3d096a12c3f6798100f8225d892451005157d8de8cc8ed1d06a1",
+  "cuda_device": "NVIDIA GeForce GTX 1080 Ti",
+  "dataset_source_sha256": "0626b52e3e1cd92e3295e127ac217cce239138189b7eb4fd06b3e59be4e6e60a",
+  "elapsed_seconds": 3048.819880299736,
+  "experiment": "pilot1000_c3_random_matched",
+  "g0_manifest_sha256": "b787ad5b1f1097de552ceb266a33506a4b8b95f6738d2eeb6fbf05b9ccf4e74c",
+  "g0_seal_sha256": "c497c58a1d86d1cd80ecf866e0826e800e31a8336479bd8e4594196eadcd0ad6",
+  "hostname": "<COMPUTE_NODE>",
+  "peak_cuda_memory_bytes": 186480128,
+  "seed": 0,
+  "slurm_job_id": "1764059",
+  "source_sha256": "f093d8e68853f7bbfd5af6a94b18a9c8442997a682a126a45d6792704eca9b05",
+  "state": "completed",
+  "steps": 1000,
+  "torch_version": "2.5.1+cu121",
+  "validation_cohort_seed": 100000,
+  "validation_cohort_sha256": "57e6229d3654cc45850de71248c19f95d592e52f1816e185449cf61bc11eed7f"
+}

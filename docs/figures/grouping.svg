@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="465" viewBox="0 0 1100 465" role="img" aria-label="Grouping is the intervention">
+<title>Grouping is the intervention</title><desc>Schematic example: the same latent stream can be written into different memory records.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607083"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172C43} .small{fill:#526579}</style>
+<rect width="1100" height="465" fill="#FFFFFF"/>
+<text x="36" y="42" font-size="26" font-weight="700" text-anchor="start" style="fill:#172C43">Grouping is the intervention</text>
+<text x="36" y="72" font-size="16" font-weight="400" text-anchor="start" style="fill:#526579">Schematic example: the same latent stream can be written into different memory records.</text>
+<text x="36" y="147" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Individual frames</text>
+<rect x="260" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="284" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="320" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="344" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="380" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="404" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="440" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="464" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="500" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="524" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="560" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="584" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="620" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="644" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="680" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="704" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="740" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="764" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="800" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="824" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="860" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="884" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<rect x="920" y="120" width="52" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="944" cy="141" r="6" fill="#657A8E" stroke="none"/>
+<text x="36" y="222" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Fixed chunks</text>
+<rect x="260" y="195" width="172" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="284" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="344" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="404" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<rect x="440" y="195" width="172" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="464" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="524" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="584" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<rect x="620" y="195" width="172" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="644" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="704" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="764" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<rect x="800" y="195" width="172" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="824" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="884" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="944" cy="216" r="6" fill="#657A8E" stroke="none"/>
+<text x="36" y="297" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Random matched</text>
+<rect x="260" y="270" width="112" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="284" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="344" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<rect x="380" y="270" width="292" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="404" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="464" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="524" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="584" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="644" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<rect x="680" y="270" width="112" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="704" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="764" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<rect x="800" y="270" width="172" height="43" rx="6" fill="#EDF1F6" stroke="none"/>
+<circle cx="824" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="884" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<circle cx="944" cy="291" r="6" fill="#657A8E" stroke="none"/>
+<text x="36" y="372" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Event aligned</text>
+<rect x="260" y="345" width="172" height="43" rx="6" fill="#E7F4F2" stroke="none"/>
+<circle cx="284" cy="366" r="6" fill="#007E78" stroke="none"/>
+<circle cx="344" cy="366" r="6" fill="#007E78" stroke="none"/>
+<circle cx="404" cy="366" r="6" fill="#007E78" stroke="none"/>
+<rect x="440" y="345" width="112" height="43" rx="6" fill="#E7F4F2" stroke="none"/>
+<circle cx="464" cy="366" r="6" fill="#007E78" stroke="none"/>
+<circle cx="524" cy="366" r="6" fill="#007E78" stroke="none"/>
+<rect x="560" y="345" width="292" height="43" rx="6" fill="#E7F4F2" stroke="none"/>
+<circle cx="584" cy="366" r="6" fill="#007E78" stroke="none"/>
+<circle cx="644" cy="366" r="6" fill="#007E78" stroke="none"/>
+<circle cx="704" cy="366" r="6" fill="#007E78" stroke="none"/>
+<circle cx="764" cy="366" r="6" fill="#007E78" stroke="none"/>
+<circle cx="824" cy="366" r="6" fill="#007E78" stroke="none"/>
+<rect x="860" y="345" width="112" height="43" rx="6" fill="#E7F4F2" stroke="none"/>
+<circle cx="884" cy="366" r="6" fill="#007E78" stroke="none"/>
+<circle cx="944" cy="366" r="6" fill="#007E78" stroke="none"/>
+<text x="36" y="439" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Illustration only. Matched record payloads do not automatically match retention or source availability.</text>
+</svg>

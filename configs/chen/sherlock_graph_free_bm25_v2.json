@@ -1,0 +1,120 @@
+{
+  "artifact_type": "cmwm_sherlock_graph_free_protocol_v2",
+  "result_artifact_type": "cmwm_sherlock_graph_free_bm25_development_v2",
+  "claim_eligible": false,
+  "status": "development_revision_after_v1_target_multiplicity_diagnostic",
+  "dataset": {
+    "name": "Sherlock",
+    "atomic_labels": "data/sherlock/labels_1000_raw.jsonl",
+    "recall_tokens": "data/sherlock/recall_tokens_raw.jsonl",
+    "recall_occurrences": "data/sherlock/recall_occurrences.csv",
+    "expected_atomic_segments": 1000,
+    "expected_human_events": 50,
+    "expected_zero_duration_segments": 1,
+    "expected_start_time_resets": 1,
+    "expected_recall_token_rows": 46528,
+    "expected_recall_occurrences": 616
+  },
+  "participant_crosswalk": {
+    "rule": "Princeton sN maps to transcript NNxx with the same integer N",
+    "source": "Table 1, Word-timestamped transcripts of two spoken narrative recall functional neuroimaging datasets",
+    "pmcid": "PMC10460947",
+    "doi": "10.1038/s41597-023-02437-9",
+    "content_or_model_inference_forbidden": true
+  },
+  "splits": {
+    "method": "sha256 rank of cmwm-sherlock-v1:sN, frozen before retrieval",
+    "development_subjects": [
+      "s17",
+      "s8",
+      "s3",
+      "s16",
+      "s12",
+      "s1",
+      "s9",
+      "s13",
+      "s4",
+      "s2",
+      "s15",
+      "s7"
+    ],
+    "sealed_test_subjects": [
+      "s11",
+      "s6",
+      "s14",
+      "s5",
+      "s10"
+    ],
+    "active_split": "development",
+    "sealed_test_authorized": false
+  },
+  "conditions": {
+    "fine_units": {
+      "grouping": "one record per released fine-grained label row"
+    },
+    "fixed_chunks": {
+      "grouping": "20 consecutive atomic rows per record",
+      "fixed_size": 20
+    },
+    "random_matched": {
+      "grouping": "oracle event-length multiset shuffled across the same atomic sequence",
+      "seeds": [
+        11,
+        23,
+        47,
+        89,
+        131,
+        197,
+        263,
+        347,
+        419,
+        503
+      ]
+    },
+    "human_events": {
+      "grouping": "50 contiguous released human scene groups"
+    }
+  },
+  "retrieval": {
+    "method": "bm25",
+    "k1": 1.2,
+    "b": 0.75,
+    "cutoffs": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "primary_cutoff": 5,
+    "answer_or_scene_id_forbidden_from_query": true
+  },
+  "evaluation": {
+    "query_unit": "one aggregated text query per recalled participant-scene pair",
+    "overlap_diagnostic_target": "any retrieved record containing at least one atomic unit from the coded scene",
+    "single_target": "the deterministic record with maximum atomic-segment IoU to the coded human scene",
+    "graded_relevance": "atomic-segment IoU between each record and the coded human scene",
+    "primary_metric": "participant-macro hit@5 for the single maximum-IoU target record",
+    "primary_metric_key": "subject_macro_best_iou_hit_at_5",
+    "secondary_metric": "participant-macro IoU-nDCG@5",
+    "diagnostics": [
+      "legacy_overlap_hit",
+      "micro_hit",
+      "mrr",
+      "returned_text_tokens",
+      "target_record_count",
+      "maximum_iou"
+    ],
+    "revision_reason": "v1 overlap hit rewarded boundary-crossing conditions with multiple relevant records per query",
+    "bm25_length_confound_disclosed": true,
+    "random_condition_aggregation": "mean across frozen random seeds"
+  },
+  "limitations": [
+    "Post-v1 development metric correction; no held-out test access and no confirmatory claim.",
+    "The released label sequence contains one zero-duration row and one timestamp reset between its two source parts; both are retained and audited because retrieval uses sequence order rather than duration.",
+    "Encoding records use scene markers in the released 1,000-label file, whereas recall targets use the primary 50-scene annotation; corresponding boundaries are one-to-one but can differ by up to three seconds.",
+    "BM25 record length and sparse-index cost are not byte matched across segmentation conditions.",
+    "The maximum-IoU single target is a deterministic evaluation construct; IoU-nDCG is reported to avoid relying on it alone.",
+    "Dense fixed-width embeddings are required before a matched-memory claim.",
+    "No causal graph or fMRI is used."
+  ]
+}

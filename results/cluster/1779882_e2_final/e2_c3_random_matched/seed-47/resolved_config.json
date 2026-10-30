@@ -1,0 +1,150 @@
+{
+  "artifacts": {
+    "save_best_checkpoint": true,
+    "save_last_checkpoint": true,
+    "save_predictions": true
+  },
+  "data": {
+    "context_steps": 32,
+    "generator_policy": "exact_task_lag_v2",
+    "heldout_families": [],
+    "max_episode_steps": 160,
+    "min_episode_steps": 32,
+    "name": "cmwm_synth_e2",
+    "observation_source": "oracle_symbolic_state",
+    "query_lags": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "split_seed": 1729,
+    "split_unit": "generator_mechanism",
+    "test_episodes": 0,
+    "train_episodes": 10000,
+    "validation_episodes": 1000
+  },
+  "evaluation": {
+    "boundary_tolerance_steps": 1,
+    "confirmatory_seeds": [
+      11,
+      23,
+      47,
+      89,
+      131
+    ],
+    "primary_metric": "long_delay_memory_score",
+    "report_resource_metrics": true
+  },
+  "execution": {
+    "deterministic": true,
+    "deterministic_warn_only": false,
+    "device": "cuda",
+    "precision": "bf16",
+    "require_cuda": true,
+    "require_slurm": true
+  },
+  "experiment": {
+    "name": "e2_c3_random_matched",
+    "prototype": "cmwm-e2",
+    "run_class": "development",
+    "seed": 47
+  },
+  "gates": {
+    "learned_boundary_f1": 0.8,
+    "learned_oracle_gain_recovery": 0.75,
+    "max_inference_cost_ratio": 1.25,
+    "oracle_absolute_gain": 0.05,
+    "oracle_relative_error_reduction": 0.2,
+    "visual_uplift_retention": 0.5
+  },
+  "paths": {
+    "data_root_env": "CMWM_DATA_ROOT",
+    "development_endpoint_manifest_env": "CMWM_DEVELOPMENT_ENDPOINT_MANIFEST",
+    "g0_attestation_env": "CMWM_G0_ATTESTATION",
+    "model_cache_env": "CMWM_MODEL_CACHE",
+    "run_root_env": "CMWM_RUN_ROOT"
+  },
+  "project": "cmwm",
+  "prototype1": {
+    "action_adapter": {
+      "name": "canonical_action",
+      "output_dim": 128
+    },
+    "boundary": {
+      "name": "random_matched",
+      "online_only": true,
+      "threshold": null
+    },
+    "memory": {
+      "capacity_records": 64,
+      "eviction": "fifo",
+      "key_dim": 128,
+      "metadata_bytes_counted": true,
+      "name": "event",
+      "record_layout": {
+        "capacity_bytes": 68096,
+        "metadata_bytes": 40,
+        "record_bytes": 1064,
+        "vector_bytes": 1024
+      },
+      "retrieval_top_k": 4,
+      "storage_dtype": "float32",
+      "value_dim": 128
+    },
+    "state_adapter": {
+      "grid_height": 4,
+      "grid_width": 6,
+      "max_entities": 8,
+      "name": "canonical_symbolic",
+      "output_dim": 128
+    },
+    "step_fusion": {
+      "name": "state_action_concat_projection",
+      "output_dim": 128
+    },
+    "tasks": {
+      "causal_predecessor_recall": true,
+      "delayed_state_recall": true,
+      "object_location_history": true,
+      "occlusion_continuity": true
+    },
+    "temporal": {
+      "hidden_dim": 128,
+      "layers": 1,
+      "name": "gru"
+    }
+  },
+  "scale": {
+    "active_profile": "e2_construction_only",
+    "claim_eligible": false,
+    "confirmatory_reference": {
+      "development_episodes": 10000,
+      "heldout_families": [
+        "HF-A",
+        "HF-B"
+      ],
+      "seeds": [
+        11,
+        23,
+        47,
+        89,
+        131
+      ],
+      "test_episodes": 20000,
+      "training_observation_steps": 10000000
+    }
+  },
+  "schema_version": 1,
+  "training": {
+    "batch_size": 32,
+    "checkpoint_every_steps": 100,
+    "eval_every_steps": 100,
+    "gradient_clip_norm": 1.0,
+    "learning_rate": 0.0003,
+    "max_steps": 1000,
+    "num_workers": 0,
+    "resume": true,
+    "weight_decay": 0.01
+  }
+}

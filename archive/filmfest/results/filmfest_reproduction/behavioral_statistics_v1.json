@@ -1,0 +1,66 @@
+{
+  "semantic_centrality_recall": {
+    "n": 202,
+    "r": 0.20242360841142445,
+    "t": 2.9232184273762427,
+    "df": 200,
+    "p_two_sided": 0.003863516361446812,
+    "fisher_95_ci": [
+      0.06622320067965219,
+      0.3312187727333873
+    ]
+  },
+  "causal_centrality_recall": {
+    "n": 202,
+    "r": 0.2940988937517607,
+    "t": 4.351637639438729,
+    "df": 200,
+    "p_two_sided": 2.153746260008189e-05,
+    "fisher_95_ci": [
+      0.1626516555125379,
+      0.41528889665473057
+    ]
+  },
+  "semantic_high_low": {
+    "n": 15,
+    "mean_high": 0.82228,
+    "mean_low": 0.7293133333333335,
+    "mean_difference": 0.09296666666666668,
+    "t": 6.119080700782461,
+    "df": 14,
+    "p_two_sided": 2.654800970462358e-05,
+    "cohens_dz": 1.579939843215312
+  },
+  "causal_high_low": {
+    "n": 15,
+    "mean_high": 0.8449333333333334,
+    "mean_low": 0.71114,
+    "mean_difference": 0.13379333333333335,
+    "t": 8.229110922270156,
+    "df": 14,
+    "p_two_sided": 9.843156725475347e-07,
+    "cohens_dz": 2.1247473037363913
+  },
+  "source": {
+    "doi": "10.1038/s41467-022-31965-2",
+    "workbook": "data/filmfest/source_data/extracted/SourceData.xlsx",
+    "sheets": [
+      "Fig3a",
+      "Fig3b",
+      "Fig3c",
+      "Fig3d"
+    ]
+  },
+  "plots": [
+    "results/filmfest_reproduction/plots_v1/semantic_centrality_vs_recall.svg",
+    "results/filmfest_reproduction/plots_v1/causal_centrality_vs_recall.svg",
+    "results/filmfest_reproduction/plots_v1/semantic_high_low_recall.svg",
+    "results/filmfest_reproduction/plots_v1/causal_high_low_recall.svg"
+  ],
+  "environment": {
+    "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  }
+}

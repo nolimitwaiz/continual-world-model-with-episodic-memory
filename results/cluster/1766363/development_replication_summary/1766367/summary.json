@@ -1,0 +1,146 @@
+{
+  "artifact_type": "cmwm_development_replication_summary_v1",
+  "claim_eligible": false,
+  "confirmatory_blockers": [
+    "No HF-A/HF-B held-out evaluation was run.",
+    "Current validation LDMS is pooled accuracy rather than the frozen task/lag/family macro-average.",
+    "Hierarchical episode-within-seed confidence intervals require saved paired predictions."
+  ],
+  "development_diagnostics": {
+    "oracle_vs_fixed_four_of_five_positive": false,
+    "oracle_vs_fixed_positive_ci": false,
+    "oracle_vs_fixed_practical_effect": false
+  },
+  "development_selected_baseline": "fixed_chunks",
+  "evidence_class": "development_replication",
+  "g1_decision": "not_evaluated_on_development_data",
+  "hardware_by_condition_and_seed": {
+    "context_only": {
+      "11": "NVIDIA GeForce RTX 2080 Ti",
+      "131": "NVIDIA GeForce GTX 1080 Ti",
+      "23": "NVIDIA GeForce GTX 1080 Ti",
+      "47": "NVIDIA GeForce GTX 1080 Ti",
+      "89": "NVIDIA GeForce GTX 1080 Ti"
+    },
+    "fixed_chunks": {
+      "11": "NVIDIA A100-SXM4-80GB",
+      "131": "NVIDIA A100-SXM4-80GB",
+      "23": "NVIDIA A100-SXM4-80GB",
+      "47": "NVIDIA A100-SXM4-80GB",
+      "89": "NVIDIA A100-SXM4-80GB"
+    },
+    "frame_memory": {
+      "11": "NVIDIA GeForce GTX 1080 Ti",
+      "131": "NVIDIA A100-SXM4-80GB",
+      "23": "NVIDIA A100-SXM4-80GB",
+      "47": "NVIDIA A100-SXM4-80GB",
+      "89": "NVIDIA A100-SXM4-80GB"
+    },
+    "oracle_events": {
+      "11": "NVIDIA A100-SXM4-80GB",
+      "131": "NVIDIA A100-SXM4-80GB",
+      "23": "NVIDIA A100-SXM4-80GB",
+      "47": "NVIDIA A100-SXM4-80GB",
+      "89": "NVIDIA A100-SXM4-80GB"
+    },
+    "random_matched": {
+      "11": "NVIDIA A100-SXM4-80GB",
+      "131": "NVIDIA A100-SXM4-80GB",
+      "23": "NVIDIA A100-SXM4-80GB",
+      "47": "NVIDIA A100-SXM4-80GB",
+      "89": "NVIDIA A100-SXM4-80GB"
+    }
+  },
+  "identities": {
+    "dataset_source_sha256": "0626b52e3e1cd92e3295e127ac217cce239138189b7eb4fd06b3e59be4e6e60a",
+    "g0_manifest_sha256": "b787ad5b1f1097de552ceb266a33506a4b8b95f6738d2eeb6fbf05b9ccf4e74c",
+    "g0_seal_sha256": "c497c58a1d86d1cd80ecf866e0826e800e31a8336479bd8e4594196eadcd0ad6",
+    "source_sha256": "5474d92ff644f7d726fd662c96a66060fbfda1ea37306cb64f0881ebb46e6b39",
+    "torch_version": "2.5.1+cu121"
+  },
+  "means_by_condition": {
+    "context_only": 0.3765625,
+    "fixed_chunks": 0.841015625,
+    "frame_memory": 0.478515625,
+    "oracle_events": 0.85078125,
+    "random_matched": 0.803515625
+  },
+  "oracle_vs_fixed": {
+    "baseline_mean": 0.841015625,
+    "candidate_mean": 0.85078125,
+    "deltas_by_seed_order": [
+      -0.001953125,
+      0.0,
+      0.04296875,
+      -0.005859375,
+      0.013671875
+    ],
+    "mean_delta": 0.009765625,
+    "paired_t_ci_high": 0.03455652384372171,
+    "paired_t_ci_low": -0.015025273843721713,
+    "positive_seed_count": 2,
+    "relative_error_reduction": 0.06142506142506144
+  },
+  "oracle_vs_random_matched": {
+    "baseline_mean": 0.803515625,
+    "candidate_mean": 0.85078125,
+    "deltas_by_seed_order": [
+      0.0390625,
+      0.044921875,
+      0.060546875,
+      0.041015625,
+      0.05078125
+    ],
+    "mean_delta": 0.047265625,
+    "paired_t_ci_high": 0.05802946518822268,
+    "paired_t_ci_low": 0.036501784811777314,
+    "positive_seed_count": 5,
+    "relative_error_reduction": 0.24055666003976137
+  },
+  "primary_checkpoint": 1000,
+  "scores_by_condition": {
+    "context_only": [
+      0.3515625,
+      0.3984375,
+      0.37890625,
+      0.388671875,
+      0.365234375
+    ],
+    "fixed_chunks": [
+      0.849609375,
+      0.82421875,
+      0.84375,
+      0.849609375,
+      0.837890625
+    ],
+    "frame_memory": [
+      0.435546875,
+      0.484375,
+      0.513671875,
+      0.462890625,
+      0.49609375
+    ],
+    "oracle_events": [
+      0.84765625,
+      0.82421875,
+      0.88671875,
+      0.84375,
+      0.8515625
+    ],
+    "random_matched": [
+      0.80859375,
+      0.779296875,
+      0.826171875,
+      0.802734375,
+      0.80078125
+    ]
+  },
+  "seeds": [
+    11,
+    23,
+    47,
+    89,
+    131
+  ],
+  "selection_source": "independent seed-0 pilot 1764055"
+}

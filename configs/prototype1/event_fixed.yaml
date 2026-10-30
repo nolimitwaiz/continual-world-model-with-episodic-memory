@@ -1,0 +1,14 @@
+extends: ../defaults.yaml
+
+experiment:
+  name: prototype1_event_fixed
+
+prototype1:
+  boundary:
+    name: fixed
+    threshold: null
+    window_steps: 8
+  memory:
+    name: event
+    capacity_records: 64
+    retrieval_top_k: 4

@@ -1,0 +1,19 @@
+extends: ../defaults.yaml
+
+experiment:
+  name: engineering_base_do_not_submit
+  run_class: engineering
+  seed: 0
+
+training:
+  max_steps: 20
+  batch_size: 4
+  num_workers: 0
+  eval_every_steps: 5
+  checkpoint_every_steps: 5
+  resume: true
+
+artifacts:
+  save_predictions: false
+  save_best_checkpoint: true
+  save_last_checkpoint: true

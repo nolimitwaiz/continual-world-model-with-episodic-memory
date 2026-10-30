@@ -1,0 +1,22 @@
+{
+  "artifact_type": "cmwm_training_status",
+  "completed_at": "2026-08-26T23:54:01.956022+00:00",
+  "condition": "frame_memory",
+  "config_sha256": "f042d73f291ce42cb23a97ee45a7b94366bc4529d6683ef6b0dd59351559630d",
+  "cuda_device": "NVIDIA A100-SXM4-80GB",
+  "dataset_source_sha256": "0626b52e3e1cd92e3295e127ac217cce239138189b7eb4fd06b3e59be4e6e60a",
+  "elapsed_seconds": 7058.738786266185,
+  "experiment": "replication_c1_frame",
+  "g0_manifest_sha256": "b787ad5b1f1097de552ceb266a33506a4b8b95f6738d2eeb6fbf05b9ccf4e74c",
+  "g0_seal_sha256": "c497c58a1d86d1cd80ecf866e0826e800e31a8336479bd8e4594196eadcd0ad6",
+  "hostname": "<COMPUTE_NODE>",
+  "peak_cuda_memory_bytes": 197813248,
+  "seed": 89,
+  "slurm_job_id": "1766366",
+  "source_sha256": "5474d92ff644f7d726fd662c96a66060fbfda1ea37306cb64f0881ebb46e6b39",
+  "state": "completed",
+  "steps": 1000,
+  "torch_version": "2.5.1+cu121",
+  "validation_cohort_seed": 100089,
+  "validation_cohort_sha256": "cda3a5fc71695de9227bcec02d37fcafc7cd416beae1b35dc0880059b244ef61"
+}

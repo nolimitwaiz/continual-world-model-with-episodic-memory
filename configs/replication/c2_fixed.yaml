@@ -1,0 +1,12 @@
+extends: base.yaml
+
+experiment:
+  name: replication_c2_fixed
+
+prototype1:
+  boundary:
+    name: fixed
+    threshold: null
+    window_steps: 8
+  memory:
+    name: event

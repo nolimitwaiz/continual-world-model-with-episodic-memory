@@ -1,0 +1,24 @@
+{
+  "elapsed_seconds": 0.33370770048350096,
+  "filmfest_result": false,
+  "gate_b_interpretation_allowed": false,
+  "gate_b_status_expected": "inconclusive",
+  "gate_b_status_observed": "inconclusive",
+  "graph_validation": {
+    "events": 16,
+    "retained_edges": 7,
+    "threshold": 0.5
+  },
+  "manifest_validation": {
+    "base_questions": 15,
+    "folds": 2,
+    "rows": 30
+  },
+  "methods": [
+    "bm25",
+    "oracle_causal"
+  ],
+  "scientific_status": "engineering_validation_only",
+  "test_questions": 15,
+  "test_result_rows": 30
+}

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="630" viewBox="0 0 1100 630" role="img" aria-label="E3 learning curves">
+<title>E3 learning curves</title><desc>Five-seed mean on the same validation endpoint. The oracle curve is still rising at 1,000 updates.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607083"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172C43} .small{fill:#526579}</style>
+<rect width="1100" height="630" fill="#FFFFFF"/>
+<text x="36" y="42" font-size="26" font-weight="700" text-anchor="start" style="fill:#172C43">E3 learning curves</text>
+<text x="36" y="72" font-size="16" font-weight="400" text-anchor="start" style="fill:#526579">Five-seed mean on the same validation endpoint. The oracle curve is still rising at 1,000 updates.</text>
+<line x1="85" y1="485.0" x2="1010" y2="485.0" stroke="#DCE4EA" stroke-width="1"/>
+<text x="70" y="490.0" font-size="15" font-weight="400" text-anchor="end" style="fill:#172C43">0</text>
+<line x1="85" y1="416.0" x2="1010" y2="416.0" stroke="#DCE4EA" stroke-width="1"/>
+<text x="70" y="421.0" font-size="15" font-weight="400" text-anchor="end" style="fill:#172C43">20</text>
+<line x1="85" y1="347.0" x2="1010" y2="347.0" stroke="#DCE4EA" stroke-width="1"/>
+<text x="70" y="352.0" font-size="15" font-weight="400" text-anchor="end" style="fill:#172C43">40</text>
+<line x1="85" y1="278.0" x2="1010" y2="278.0" stroke="#DCE4EA" stroke-width="1"/>
+<text x="70" y="283.0" font-size="15" font-weight="400" text-anchor="end" style="fill:#172C43">60</text>
+<line x1="85" y1="209.0" x2="1010" y2="209.0" stroke="#DCE4EA" stroke-width="1"/>
+<text x="70" y="214.0" font-size="15" font-weight="400" text-anchor="end" style="fill:#172C43">80</text>
+<line x1="85" y1="140.0" x2="1010" y2="140.0" stroke="#DCE4EA" stroke-width="1"/>
+<text x="70" y="145.0" font-size="15" font-weight="400" text-anchor="end" style="fill:#172C43">100</text>
+<text x="85.0" y="513" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">100</text>
+<text x="290.55555555555554" y="513" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">300</text>
+<text x="496.1111111111111" y="513" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">500</text>
+<text x="701.6666666666666" y="513" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">700</text>
+<text x="1010.0" y="513" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">1000</text>
+<polyline points="85.0,395.650390625 187.77777777777777,377.861328125 290.55555555555554,376.37890625 393.3333333333333,371.796875 496.1111111111111,371.662109375 598.8888888888889,368.697265625 701.6666666666666,374.22265625 804.4444444444445,369.775390625 907.2222222222222,363.845703125 1010.0,371.123046875" fill="none" stroke="#8796A5" stroke-width="3"/>
+<circle cx="85.0" cy="395.650390625" r="3.5" fill="#8796A5" stroke="none"/>
+<circle cx="187.77777777777777" cy="377.861328125" r="3.5" fill="#8796A5" stroke="none"/>
+<circle cx="290.55555555555554" cy="376.37890625" r="3.5" fill="#8796A5" stroke="none"/>
+<circle cx="393.3333333333333" cy="371.796875" r="3.5" fill="#8796A5" stroke="none"/>
+<circle cx="496.1111111111111" cy="371.662109375" r="3.5" fill="#8796A5" stroke="none"/>
+<circle cx="598.8888888888889" cy="368.697265625" r="3.5" fill="#8796A5" stroke="none"/>
+<circle cx="701.6666666666666" cy="374.22265625" r="3.5" fill="#8796A5" stroke="none"/>
+<circle cx="804.4444444444445" cy="369.775390625" r="3.5" fill="#8796A5" stroke="none"/>
+<circle cx="907.2222222222222" cy="363.845703125" r="3.5" fill="#8796A5" stroke="none"/>
+<circle cx="1010.0" cy="371.123046875" r="3.5" fill="#8796A5" stroke="none"/>
+<line x1="75" y1="577" x2="100" y2="577" stroke="#8796A5" stroke-width="4"/>
+<text x="108" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Context only</text>
+<polyline points="85.0,399.962890625 187.77777777777777,387.16015625 290.55555555555554,387.16015625 393.3333333333333,380.15234375 496.1111111111111,383.791015625 598.8888888888889,377.322265625 701.6666666666666,379.748046875 804.4444444444445,375.166015625 907.2222222222222,375.03125 1010.0,376.783203125" fill="none" stroke="#657A8E" stroke-width="3"/>
+<circle cx="85.0" cy="399.962890625" r="3.5" fill="#657A8E" stroke="none"/>
+<circle cx="187.77777777777777" cy="387.16015625" r="3.5" fill="#657A8E" stroke="none"/>
+<circle cx="290.55555555555554" cy="387.16015625" r="3.5" fill="#657A8E" stroke="none"/>
+<circle cx="393.3333333333333" cy="380.15234375" r="3.5" fill="#657A8E" stroke="none"/>
+<circle cx="496.1111111111111" cy="383.791015625" r="3.5" fill="#657A8E" stroke="none"/>
+<circle cx="598.8888888888889" cy="377.322265625" r="3.5" fill="#657A8E" stroke="none"/>
+<circle cx="701.6666666666666" cy="379.748046875" r="3.5" fill="#657A8E" stroke="none"/>
+<circle cx="804.4444444444445" cy="375.166015625" r="3.5" fill="#657A8E" stroke="none"/>
+<circle cx="907.2222222222222" cy="375.03125" r="3.5" fill="#657A8E" stroke="none"/>
+<circle cx="1010.0" cy="376.783203125" r="3.5" fill="#657A8E" stroke="none"/>
+<line x1="280" y1="577" x2="305" y2="577" stroke="#657A8E" stroke-width="4"/>
+<text x="313" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Frame FIFO</text>
+<polyline points="85.0,297.40625 187.77777777777777,302.796875 290.55555555555554,294.44140625 393.3333333333333,294.171875 496.1111111111111,290.66796875 598.8888888888889,289.994140625 701.6666666666666,293.498046875 804.4444444444445,288.51171875 907.2222222222222,291.880859375 1010.0,290.802734375" fill="none" stroke="#4778BA" stroke-width="3"/>
+<circle cx="85.0" cy="297.40625" r="3.5" fill="#4778BA" stroke="none"/>
+<circle cx="187.77777777777777" cy="302.796875" r="3.5" fill="#4778BA" stroke="none"/>
+<circle cx="290.55555555555554" cy="294.44140625" r="3.5" fill="#4778BA" stroke="none"/>
+<circle cx="393.3333333333333" cy="294.171875" r="3.5" fill="#4778BA" stroke="none"/>
+<circle cx="496.1111111111111" cy="290.66796875" r="3.5" fill="#4778BA" stroke="none"/>
+<circle cx="598.8888888888889" cy="289.994140625" r="3.5" fill="#4778BA" stroke="none"/>
+<circle cx="701.6666666666666" cy="293.498046875" r="3.5" fill="#4778BA" stroke="none"/>
+<circle cx="804.4444444444445" cy="288.51171875" r="3.5" fill="#4778BA" stroke="none"/>
+<circle cx="907.2222222222222" cy="291.880859375" r="3.5" fill="#4778BA" stroke="none"/>
+<circle cx="1010.0" cy="290.802734375" r="3.5" fill="#4778BA" stroke="none"/>
+<line x1="485" y1="577" x2="510" y2="577" stroke="#4778BA" stroke-width="4"/>
+<text x="518" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Fixed chunks</text>
+<polyline points="85.0,330.154296875 187.77777777777777,312.634765625 290.55555555555554,303.740234375 393.3333333333333,299.427734375 496.1111111111111,303.06640625 598.8888888888889,294.98046875 701.6666666666666,296.328125 804.4444444444445,292.419921875 907.2222222222222,290.802734375 1010.0,292.689453125" fill="none" stroke="#A76B23" stroke-width="3"/>
+<circle cx="85.0" cy="330.154296875" r="3.5" fill="#A76B23" stroke="none"/>
+<circle cx="187.77777777777777" cy="312.634765625" r="3.5" fill="#A76B23" stroke="none"/>
+<circle cx="290.55555555555554" cy="303.740234375" r="3.5" fill="#A76B23" stroke="none"/>
+<circle cx="393.3333333333333" cy="299.427734375" r="3.5" fill="#A76B23" stroke="none"/>
+<circle cx="496.1111111111111" cy="303.06640625" r="3.5" fill="#A76B23" stroke="none"/>
+<circle cx="598.8888888888889" cy="294.98046875" r="3.5" fill="#A76B23" stroke="none"/>
+<circle cx="701.6666666666666" cy="296.328125" r="3.5" fill="#A76B23" stroke="none"/>
+<circle cx="804.4444444444445" cy="292.419921875" r="3.5" fill="#A76B23" stroke="none"/>
+<circle cx="907.2222222222222" cy="290.802734375" r="3.5" fill="#A76B23" stroke="none"/>
+<circle cx="1010.0" cy="292.689453125" r="3.5" fill="#A76B23" stroke="none"/>
+<line x1="690" y1="577" x2="715" y2="577" stroke="#A76B23" stroke-width="4"/>
+<text x="723" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Random matched</text>
+<polyline points="85.0,301.044921875 187.77777777777777,294.7109375 290.55555555555554,295.654296875 393.3333333333333,284.873046875 496.1111111111111,292.28515625 598.8888888888889,286.220703125 701.6666666666666,276.517578125 804.4444444444445,256.70703125 907.2222222222222,247.00390625 1010.0,231.236328125" fill="none" stroke="#007E78" stroke-width="3"/>
+<circle cx="85.0" cy="301.044921875" r="3.5" fill="#007E78" stroke="none"/>
+<circle cx="187.77777777777777" cy="294.7109375" r="3.5" fill="#007E78" stroke="none"/>
+<circle cx="290.55555555555554" cy="295.654296875" r="3.5" fill="#007E78" stroke="none"/>
+<circle cx="393.3333333333333" cy="284.873046875" r="3.5" fill="#007E78" stroke="none"/>
+<circle cx="496.1111111111111" cy="292.28515625" r="3.5" fill="#007E78" stroke="none"/>
+<circle cx="598.8888888888889" cy="286.220703125" r="3.5" fill="#007E78" stroke="none"/>
+<circle cx="701.6666666666666" cy="276.517578125" r="3.5" fill="#007E78" stroke="none"/>
+<circle cx="804.4444444444445" cy="256.70703125" r="3.5" fill="#007E78" stroke="none"/>
+<circle cx="907.2222222222222" cy="247.00390625" r="3.5" fill="#007E78" stroke="none"/>
+<circle cx="1010.0" cy="231.236328125" r="3.5" fill="#007E78" stroke="none"/>
+<line x1="895" y1="577" x2="920" y2="577" stroke="#007E78" stroke-width="4"/>
+<text x="928" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Oracle events</text>
+<text x="36" y="118" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Accuracy (%)</text>
+<text x="550" y="545" font-size="17" font-weight="400" text-anchor="middle" style="fill:#172C43">Training updates</text>
+</svg>

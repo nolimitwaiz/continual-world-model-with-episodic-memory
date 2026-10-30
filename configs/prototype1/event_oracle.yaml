@@ -1,0 +1,13 @@
+extends: ../defaults.yaml
+
+experiment:
+  name: prototype1_event_oracle
+
+prototype1:
+  boundary:
+    name: oracle
+    threshold: null
+  memory:
+    name: event
+    capacity_records: 64
+    retrieval_top_k: 4

@@ -1,0 +1,13 @@
+extends: ../defaults.yaml
+
+experiment:
+  name: prototype1_event_prediction_error
+
+prototype1:
+  boundary:
+    name: prediction_error
+    threshold: 0.9
+  memory:
+    name: event
+    capacity_records: 64
+    retrieval_top_k: 4

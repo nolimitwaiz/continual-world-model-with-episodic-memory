@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="595" viewBox="0 0 1100 595" role="img" aria-label="Sherlock behavioral retrieval">
+<title>Sherlock behavioral retrieval</title><desc>Human scene grouping does not improve the primary metric. Secondary outcomes remain exploratory.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607083"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172C43} .small{fill:#526579}</style>
+<rect width="1100" height="595" fill="#FFFFFF"/>
+<text x="36" y="42" font-size="26" font-weight="700" text-anchor="start" style="fill:#172C43">Sherlock behavioral retrieval</text>
+<text x="36" y="72" font-size="16" font-weight="400" text-anchor="start" style="fill:#526579">Human scene grouping does not improve the primary metric. Secondary outcomes remain exploratory.</text>
+<text x="36" y="125" font-size="20" font-weight="700" text-anchor="start" style="fill:#172C43">Primary · hit@5</text>
+<text x="36" y="174" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Human scenes</text>
+<rect x="191" y="153" width="202.32963784423634" height="29" rx="6" fill="#007E78" stroke="none"/>
+<text x="401.32963784423634" y="174" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">0.698</text>
+<text x="36" y="221" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Random matched</text>
+<rect x="191" y="200" width="207.44524047889928" height="29" rx="6" fill="#A76B23" stroke="none"/>
+<text x="406.4452404788993" y="221" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">0.715</text>
+<line x1="191" y1="256" x2="481" y2="256" stroke="#DCE4EA" stroke-width="1"/>
+<text x="191" y="279" font-size="14" font-weight="400" text-anchor="start" style="fill:#172C43">0</text>
+<text x="481" y="279" font-size="14" font-weight="400" text-anchor="end" style="fill:#172C43">1</text>
+<text x="586" y="125" font-size="20" font-weight="700" text-anchor="start" style="fill:#172C43">Secondary · hit@1</text>
+<text x="586" y="174" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Human scenes</text>
+<rect x="741" y="153" width="137.56599459053152" height="29" rx="6" fill="#007E78" stroke="none"/>
+<text x="886.5659945905315" y="174" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">0.474</text>
+<text x="586" y="221" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Random matched</text>
+<rect x="741" y="200" width="125.3045795569475" height="29" rx="6" fill="#A76B23" stroke="none"/>
+<text x="874.3045795569475" y="221" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">0.432</text>
+<line x1="741" y1="256" x2="1031" y2="256" stroke="#DCE4EA" stroke-width="1"/>
+<text x="741" y="279" font-size="14" font-weight="400" text-anchor="start" style="fill:#172C43">0</text>
+<text x="1031" y="279" font-size="14" font-weight="400" text-anchor="end" style="fill:#172C43">1</text>
+<text x="36" y="330" font-size="20" font-weight="700" text-anchor="start" style="fill:#172C43">Secondary · reciprocal rank</text>
+<text x="36" y="379" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Human scenes</text>
+<rect x="191" y="358" width="171.38068648590823" height="29" rx="6" fill="#007E78" stroke="none"/>
+<text x="370.3806864859082" y="379" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">0.591</text>
+<text x="36" y="426" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Random matched</text>
+<rect x="191" y="405" width="166.81347442167134" height="29" rx="6" fill="#A76B23" stroke="none"/>
+<text x="365.81347442167134" y="426" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">0.575</text>
+<line x1="191" y1="461" x2="481" y2="461" stroke="#DCE4EA" stroke-width="1"/>
+<text x="191" y="484" font-size="14" font-weight="400" text-anchor="start" style="fill:#172C43">0</text>
+<text x="481" y="484" font-size="14" font-weight="400" text-anchor="end" style="fill:#172C43">1</text>
+<text x="586" y="330" font-size="20" font-weight="700" text-anchor="start" style="fill:#172C43">Secondary · overlap nDCG@5</text>
+<text x="586" y="379" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Human scenes</text>
+<rect x="741" y="358" width="171.81850051776505" height="29" rx="6" fill="#007E78" stroke="none"/>
+<text x="920.8185005177651" y="379" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">0.592</text>
+<text x="586" y="426" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Random matched</text>
+<rect x="741" y="405" width="169.52979006451608" height="29" rx="6" fill="#A76B23" stroke="none"/>
+<text x="918.5297900645161" y="426" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">0.585</text>
+<line x1="741" y1="461" x2="1031" y2="461" stroke="#DCE4EA" stroke-width="1"/>
+<text x="741" y="484" font-size="14" font-weight="400" text-anchor="start" style="fill:#172C43">0</text>
+<text x="1031" y="484" font-size="14" font-weight="400" text-anchor="end" style="fill:#172C43">1</text>
+<text x="36" y="568" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">401 development queries · 12 participants · BM25 costs not byte-matched · no raw fMRI</text>
+</svg>

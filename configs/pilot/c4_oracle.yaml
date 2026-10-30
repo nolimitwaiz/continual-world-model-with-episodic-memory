@@ -1,0 +1,11 @@
+extends: base.yaml
+
+experiment:
+  name: pilot1000_c4_oracle
+
+prototype1:
+  boundary:
+    name: oracle
+    threshold: null
+  memory:
+    name: event

@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "tolerance": 0.015,
+  "checks": [
+    {
+      "metric": "semantic_centrality_recall.r",
+      "published": 0.2,
+      "reproduced": 0.20242360841142445,
+      "absolute_difference": 0.002423608411424444,
+      "pass": true
+    },
+    {
+      "metric": "causal_centrality_recall.r",
+      "published": 0.29,
+      "reproduced": 0.2940988937517607,
+      "absolute_difference": 0.004098893751760702,
+      "pass": true
+    },
+    {
+      "metric": "semantic_high_low.t",
+      "published": 6.12,
+      "reproduced": 6.119080700782461,
+      "absolute_difference": 0.0009192992175393044,
+      "pass": true
+    },
+    {
+      "metric": "causal_high_low.t",
+      "published": 8.23,
+      "reproduced": 8.229110922270156,
+      "absolute_difference": 0.0008890777298447006,
+      "pass": true
+    },
+    {
+      "metric": "semantic_high_low.cohens_dz",
+      "published": 1.58,
+      "reproduced": 1.579939843215312,
+      "absolute_difference": 6.0156784688070175e-05,
+      "pass": true
+    },
+    {
+      "metric": "causal_high_low.cohens_dz",
+      "published": 2.12,
+      "reproduced": 2.1247473037363913,
+      "absolute_difference": 0.004747303736391206,
+      "pass": true
+    }
+  ],
+  "scope": "reproduction from released figure Source Data, not upstream graph reconstruction"
+}

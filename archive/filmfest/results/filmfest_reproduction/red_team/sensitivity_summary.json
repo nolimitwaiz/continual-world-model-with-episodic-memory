@@ -1,0 +1,39 @@
+{
+  "events": 202,
+  "participants": 15,
+  "published_probability_max_absolute_residual": 4.615384615380691e-05,
+  "events_with_specific_cohort_difference": 35,
+  "stories_with_specific_cohort_difference": [
+    "keith_reynolds",
+    "the_black_hole"
+  ],
+  "specific_cohort_probability_max_absolute_change": 0.09090909090909094,
+  "correlations": {
+    "published_cohort_probability_reconstructed": {
+      "semantic_r": 0.20242021823441683,
+      "causal_r": 0.29409538218519354
+    },
+    "specific_scene_probability": {
+      "semantic_r": 0.19534849216084946,
+      "causal_r": 0.2876874500984893
+    },
+    "all_15_probability": {
+      "semantic_r": 0.19155671326097473,
+      "causal_r": 0.27750145083812827
+    }
+  },
+  "participant_high_low_comparison": {
+    "semantic_centrality": {
+      "max_absolute_high_low_difference": 4.698000412284298e-05,
+      "mean_absolute_high_low_difference": 2.542434931322446e-05,
+      "rows_with_difference_over_rounding": 0
+    },
+    "causal_centrality": {
+      "max_absolute_high_low_difference": 0.014264089878375352,
+      "mean_absolute_high_low_difference": 0.0005002901654488875,
+      "rows_with_difference_over_rounding": 1
+    }
+  },
+  "top_bottom_rule": "round(0.4 * event_count) within movie; average proportions across included movies",
+  "interpretation_limit": "Released centralities are rounded to four decimals. Causal cutoff ties cannot be resolved exactly without upstream graph weights or the authors' selected event lists."
+}

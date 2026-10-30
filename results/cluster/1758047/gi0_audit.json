@@ -1,0 +1,220 @@
+{
+  "artifact_type": "cmwm_graph_isomorphism_gi0_audit",
+  "claim_eligible": false,
+  "environment": {
+    "hostname": "<COMPUTE_NODE>",
+    "platform": "Linux-5.15.0-179-generic-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "slurm_job_id": "1758047"
+  },
+  "episodes": 65,
+  "interpretation": "Engineering/exploratory structural audit only. Whole-graph exact matches identify known templates; local motif coverage estimates whether held-out compositions reuse training structure. No memory advantage is tested.",
+  "limitations": [
+    "1-WL fingerprints are incomplete and are used only as an index before exact verification.",
+    "Generator templates may make structural classification easier than natural event graphs.",
+    "Exact whole-graph matching cannot generalize to genuinely novel topology; motif coverage is diagnostic only.",
+    "No FilmFest or Sherlock causal graph is used in GI-0."
+  ],
+  "parameters": {
+    "action_window": 3,
+    "base_seed": 4242,
+    "test_episodes": 20,
+    "train_episodes": 30,
+    "validation_episodes": 15,
+    "wl_iterations": 4
+  },
+  "passed": true,
+  "permutation_checks": [
+    {
+      "exact_isomorphic": true,
+      "template_id": "held_out_container_transport_v1",
+      "wl_equal": true
+    },
+    {
+      "exact_isomorphic": true,
+      "template_id": "held_out_persistence_composition_v1",
+      "wl_equal": true
+    },
+    {
+      "exact_isomorphic": true,
+      "template_id": "known_containment_cycle_v1",
+      "wl_equal": true
+    },
+    {
+      "exact_isomorphic": true,
+      "template_id": "known_pick_drop_v1",
+      "wl_equal": true
+    },
+    {
+      "exact_isomorphic": true,
+      "template_id": "known_relocation_return_v1",
+      "wl_equal": true
+    }
+  ],
+  "schema_version": "cmwm.gi0-audit.v1",
+  "split_motif_coverage": {
+    "test": {
+      "episodes": 20,
+      "maximum_fraction": 0.6363636363636364,
+      "mean_fraction_of_motifs_seen_in_train": 0.5515151515151515,
+      "minimum_fraction": 0.4666666666666667
+    },
+    "train": {
+      "episodes": 30,
+      "maximum_fraction": 1.0,
+      "mean_fraction_of_motifs_seen_in_train": 1.0,
+      "minimum_fraction": 1.0
+    },
+    "validation": {
+      "episodes": 15,
+      "maximum_fraction": 1.0,
+      "mean_fraction_of_motifs_seen_in_train": 1.0,
+      "minimum_fraction": 1.0
+    }
+  },
+  "template_to_wl_fingerprints": {
+    "held_out_container_transport_v1": [
+      "b580b12e24b917b3bd6c6626c027d9145fd0350cef23cade93f67d0e8ba96d21"
+    ],
+    "held_out_persistence_composition_v1": [
+      "28c1ecb27eb35816afcd43600fd8524190fbb41e3a3e8cf2b20e54fab9e76bb2"
+    ],
+    "known_containment_cycle_v1": [
+      "34745bd49a9be860907435c6d3bad2cd46dd0d6cb5ba775b167891743ac60b21"
+    ],
+    "known_pick_drop_v1": [
+      "a17f73c1e99b3e11159fcfd60e835da6a51ebc9a527321308286c76cef53de30"
+    ],
+    "known_relocation_return_v1": [
+      "44f36e95813e14e87074b1b8a512b555db3d2b0665c17cd90796f7faf628a400"
+    ]
+  },
+  "train_motif_vocabulary_size": 13,
+  "training_performed": false,
+  "verified_isomorphism_groups": [
+    {
+      "episodes": [
+        "test-00000-2004245",
+        "test-00002-2024191",
+        "test-00004-2044137",
+        "test-00006-2064083",
+        "test-00008-2084029",
+        "test-00010-2103975",
+        "test-00012-2123921",
+        "test-00014-2143867",
+        "test-00016-2163813",
+        "test-00018-2183759"
+      ],
+      "group_id": 0,
+      "splits": {
+        "test": 10
+      },
+      "templates": [
+        "held_out_persistence_composition_v1"
+      ]
+    },
+    {
+      "episodes": [
+        "train-00001-14215",
+        "train-00004-44134",
+        "train-00007-74053",
+        "train-00010-103972",
+        "train-00013-133891",
+        "train-00016-163810",
+        "train-00019-193729",
+        "train-00022-223648",
+        "train-00025-253567",
+        "train-00028-283486",
+        "validation-00001-1014218",
+        "validation-00004-1044137",
+        "validation-00007-1074056",
+        "validation-00010-1103975",
+        "validation-00013-1133894"
+      ],
+      "group_id": 1,
+      "splits": {
+        "train": 10,
+        "validation": 5
+      },
+      "templates": [
+        "known_containment_cycle_v1"
+      ]
+    },
+    {
+      "episodes": [
+        "train-00002-24188",
+        "train-00005-54107",
+        "train-00008-84026",
+        "train-00011-113945",
+        "train-00014-143864",
+        "train-00017-173783",
+        "train-00020-203702",
+        "train-00023-233621",
+        "train-00026-263540",
+        "train-00029-293459",
+        "validation-00002-1024191",
+        "validation-00005-1054110",
+        "validation-00008-1084029",
+        "validation-00011-1113948",
+        "validation-00014-1143867"
+      ],
+      "group_id": 2,
+      "splits": {
+        "train": 10,
+        "validation": 5
+      },
+      "templates": [
+        "known_relocation_return_v1"
+      ]
+    },
+    {
+      "episodes": [
+        "train-00000-4242",
+        "train-00003-34161",
+        "train-00006-64080",
+        "train-00009-93999",
+        "train-00012-123918",
+        "train-00015-153837",
+        "train-00018-183756",
+        "train-00021-213675",
+        "train-00024-243594",
+        "train-00027-273513",
+        "validation-00000-1004245",
+        "validation-00003-1034164",
+        "validation-00006-1064083",
+        "validation-00009-1094002",
+        "validation-00012-1123921"
+      ],
+      "group_id": 3,
+      "splits": {
+        "train": 10,
+        "validation": 5
+      },
+      "templates": [
+        "known_pick_drop_v1"
+      ]
+    },
+    {
+      "episodes": [
+        "test-00001-2014218",
+        "test-00003-2034164",
+        "test-00005-2054110",
+        "test-00007-2074056",
+        "test-00009-2094002",
+        "test-00011-2113948",
+        "test-00013-2133894",
+        "test-00015-2153840",
+        "test-00017-2173786",
+        "test-00019-2193732"
+      ],
+      "group_id": 4,
+      "splits": {
+        "test": 10
+      },
+      "templates": [
+        "held_out_container_transport_v1"
+      ]
+    }
+  ],
+  "wl_fingerprint_collisions_across_templates": {}
+}

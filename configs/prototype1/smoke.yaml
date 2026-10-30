@@ -1,0 +1,21 @@
+extends: ../defaults.yaml
+
+experiment:
+  name: prototype1_smoke
+  seed: 0
+
+data:
+  train_episodes: 32
+  validation_episodes: 16
+  test_episodes: 16
+  min_episode_steps: 8
+  max_episode_steps: 16
+  context_steps: 4
+  query_lags: [2, 8]
+
+training:
+  max_steps: 2
+  batch_size: 4
+  num_workers: 0
+  eval_every_steps: 1
+  checkpoint_every_steps: 1

@@ -1,0 +1,25 @@
+extends: ../defaults.yaml
+
+experiment:
+  name: e2_base_do_not_submit
+  prototype: cmwm-e2
+  run_class: development
+  seed: 0
+
+data:
+  name: cmwm_synth_e2
+  generator_policy: exact_task_lag_v2
+  test_episodes: 0
+  heldout_families: []
+
+scale:
+  active_profile: e2_construction_only
+  claim_eligible: false
+
+training:
+  max_steps: 1000
+  batch_size: 32
+  num_workers: 0
+  eval_every_steps: 100
+  checkpoint_every_steps: 100
+  resume: true

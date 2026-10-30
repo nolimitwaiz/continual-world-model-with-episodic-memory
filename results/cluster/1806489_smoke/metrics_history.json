@@ -1,0 +1,182 @@
+[
+  {
+    "elapsed_seconds": 95.97319433093071,
+    "gradient_norm_before_clip": 5.853982448577881,
+    "loss": {
+      "answer": 3.0071613788604736,
+      "boundary": -0.0,
+      "causal_pointer": 1.376562476158142,
+      "prediction": 0.24177876114845276,
+      "retrieval": 3.09619140625,
+      "total": 7.504093170166016
+    },
+    "predictions": "<CLUSTER_PATH>",
+    "step": 5,
+    "validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.1796875,
+      "causal_correct": 23,
+      "causal_examples": 128,
+      "examples": 512,
+      "long_delay_memory_score": 0.140625,
+      "macro_task_lag_accuracy": 0.140625,
+      "paired_prediction_count": 512,
+      "pooled_accuracy_from_predictions": 0.140625,
+      "pooled_long_delay_memory_score": 0.140625,
+      "prediction_identity_sha256": "0613cf6b53c146ba82532bd0a3e3f5a7aed217e514f8781e3bb97f38cb9ae802",
+      "retrieval_recall_at_four": 0.486328125,
+      "retrieval_target_available": 249,
+      "state_accuracy": 0.12760416666666666,
+      "state_correct": 49,
+      "state_examples": 384,
+      "task_lag_accuracy": {
+        "causal_predecessor@128": 0.234375,
+        "causal_predecessor@64": 0.125,
+        "delayed_state@128": 0.0625,
+        "delayed_state@64": 0.171875,
+        "object_location_history@128": 0.109375,
+        "object_location_history@64": 0.125,
+        "occlusion_continuity@128": 0.171875,
+        "occlusion_continuity@64": 0.125
+      }
+    }
+  },
+  {
+    "elapsed_seconds": 179.24339141324162,
+    "gradient_norm_before_clip": 6.769060134887695,
+    "loss": {
+      "answer": 2.646484375,
+      "boundary": -0.0,
+      "causal_pointer": 1.1882812976837158,
+      "prediction": 0.2278309315443039,
+      "retrieval": 3.06201171875,
+      "total": 6.919560432434082
+    },
+    "predictions": "<CLUSTER_PATH>",
+    "step": 10,
+    "validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.4140625,
+      "causal_correct": 53,
+      "causal_examples": 128,
+      "examples": 512,
+      "long_delay_memory_score": 0.20703125,
+      "macro_task_lag_accuracy": 0.20703125,
+      "paired_prediction_count": 512,
+      "pooled_accuracy_from_predictions": 0.20703125,
+      "pooled_long_delay_memory_score": 0.20703125,
+      "prediction_identity_sha256": "557fbe2ebfdc3a5ff4681de6568df9ad9669ee264770219f92a4a86b3b0ba8a2",
+      "retrieval_recall_at_four": 0.69140625,
+      "retrieval_target_available": 354,
+      "state_accuracy": 0.13802083333333334,
+      "state_correct": 53,
+      "state_examples": 384,
+      "task_lag_accuracy": {
+        "causal_predecessor@128": 0.390625,
+        "causal_predecessor@64": 0.4375,
+        "delayed_state@128": 0.0625,
+        "delayed_state@64": 0.1875,
+        "object_location_history@128": 0.15625,
+        "object_location_history@64": 0.203125,
+        "occlusion_continuity@128": 0.078125,
+        "occlusion_continuity@64": 0.140625
+      }
+    }
+  },
+  {
+    "elapsed_seconds": 260.5172748360783,
+    "gradient_norm_before_clip": 7.413416862487793,
+    "loss": {
+      "answer": 2.369140625,
+      "boundary": -0.0,
+      "causal_pointer": 1.2522321939468384,
+      "prediction": 0.2096291035413742,
+      "retrieval": 2.884765625,
+      "total": 6.527101039886475
+    },
+    "predictions": "<CLUSTER_PATH>",
+    "step": 15,
+    "validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.3515625,
+      "causal_correct": 45,
+      "causal_examples": 128,
+      "examples": 512,
+      "long_delay_memory_score": 0.208984375,
+      "macro_task_lag_accuracy": 0.208984375,
+      "paired_prediction_count": 512,
+      "pooled_accuracy_from_predictions": 0.208984375,
+      "pooled_long_delay_memory_score": 0.208984375,
+      "prediction_identity_sha256": "f2acdf7c7d91a072d02610db434fac069f547c99942732e213283bf2485201db",
+      "retrieval_recall_at_four": 0.7734375,
+      "retrieval_target_available": 396,
+      "state_accuracy": 0.16145833333333334,
+      "state_correct": 62,
+      "state_examples": 384,
+      "task_lag_accuracy": {
+        "causal_predecessor@128": 0.3125,
+        "causal_predecessor@64": 0.390625,
+        "delayed_state@128": 0.171875,
+        "delayed_state@64": 0.203125,
+        "object_location_history@128": 0.21875,
+        "object_location_history@64": 0.171875,
+        "occlusion_continuity@128": 0.109375,
+        "occlusion_continuity@64": 0.09375
+      }
+    }
+  },
+  {
+    "elapsed_seconds": 344.28116472810507,
+    "gradient_norm_before_clip": 7.998936653137207,
+    "loss": {
+      "answer": 2.5628254413604736,
+      "boundary": -0.0,
+      "causal_pointer": 0.66357421875,
+      "prediction": 0.19227482378482819,
+      "retrieval": 2.80517578125,
+      "total": 6.050802707672119
+    },
+    "predictions": "<CLUSTER_PATH>",
+    "step": 20,
+    "validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.4765625,
+      "causal_correct": 61,
+      "causal_examples": 128,
+      "examples": 512,
+      "long_delay_memory_score": 0.271484375,
+      "macro_task_lag_accuracy": 0.271484375,
+      "paired_prediction_count": 512,
+      "pooled_accuracy_from_predictions": 0.271484375,
+      "pooled_long_delay_memory_score": 0.271484375,
+      "prediction_identity_sha256": "a7766e68cc326693a6d59a469890ffa470b37e206c86b0dfeba6156d218f5b31",
+      "retrieval_recall_at_four": 0.814453125,
+      "retrieval_target_available": 417,
+      "state_accuracy": 0.203125,
+      "state_correct": 78,
+      "state_examples": 384,
+      "task_lag_accuracy": {
+        "causal_predecessor@128": 0.484375,
+        "causal_predecessor@64": 0.46875,
+        "delayed_state@128": 0.171875,
+        "delayed_state@64": 0.3125,
+        "object_location_history@128": 0.25,
+        "object_location_history@64": 0.125,
+        "occlusion_continuity@128": 0.203125,
+        "occlusion_continuity@64": 0.15625
+      }
+    }
+  }
+]

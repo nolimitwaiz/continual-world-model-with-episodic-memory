@@ -1,0 +1,95 @@
+{
+  "schema": "cmwm.small-validation-rubric.v0",
+  "status": "draft_not_frozen",
+  "execution_authorized": false,
+  "training_authorized": false,
+  "cluster_submission_authorized": false,
+  "external_api_authorized": false,
+  "external_api_budget_usd": 0,
+  "claim_eligible": false,
+  "input_interpretation_pending": true,
+  "candidate_observation_modalities": [
+    "vision",
+    "speech",
+    "audio_visual"
+  ],
+  "active_first_modality": "vision",
+  "observation_text_embeddings": false,
+  "observation_ocr_or_transcripts": false,
+  "transformer_backbone_in_our_candidate": false,
+  "scope": "rubric, observation packets and small validation only; no full-stack expansion",
+  "setup_episodes": 8,
+  "scored_episodes_per_modality": 32,
+  "question_types": [
+    "perception",
+    "delayed_state",
+    "hidden_state",
+    "temporal_order",
+    "next_state",
+    "unobservability"
+  ],
+  "primary_tasks": [
+    "delayed_state",
+    "hidden_state",
+    "temporal_order",
+    "next_state"
+  ],
+  "questions_per_episode": 6,
+  "scored_questions_per_modality": 192,
+  "delay_seconds": [
+    2,
+    8
+  ],
+  "episodes_per_delay": 16,
+  "primary_score": "equal task macro of exact-answer accuracy, with all task/delay cells reported",
+  "primary_contrast": "oracle_events_minus_random_matched",
+  "mandatory_secondary_contrast": "oracle_events_minus_fixed_chunks",
+  "memory_controls": [
+    "no_episodic_memory",
+    "fixed_chunks",
+    "random_matched",
+    "oracle_events"
+  ],
+  "primary_grader": "deterministic_exact_choice_id",
+  "missing_malformed_timeout_score": 0,
+  "human_review_cases": 24,
+  "human_reviewers": 2,
+  "human_scale": [
+    0,
+    1,
+    2
+  ],
+  "human_dimensions": [
+    "factual_fidelity",
+    "temporal_fidelity",
+    "evidence_support",
+    "uncertainty"
+  ],
+  "external_reference_candidates": {
+    "vision": {
+      "model_id": "gpt-6-luna",
+      "verified_input_modalities": [
+        "text",
+        "image"
+      ],
+      "selected": false
+    },
+    "speech": {
+      "model_id": "gpt-audio-1.5",
+      "verified_input_modalities": [
+        "text",
+        "audio"
+      ],
+      "selected": false
+    },
+    "audio_visual": null
+  },
+  "blocking_requirements": [
+    "Confirm pixel-input interpretation and freeze pilot protocol.",
+    "Create audited stimulus/gold/evidence packets with split and input hashes.",
+    "Identify a usable non-Transformer perception model; do not compare a random untrained network to GPT.",
+    "Implement adapters and paired episode-level analysis; the rubric scorer alone does not validate model execution.",
+    "Authorize cluster validation separately; no local scientific runs.",
+    "Before any API implementation, settle model IDs, credential reuse/new decision, data-upload rights and a cost cap."
+  ]
+}

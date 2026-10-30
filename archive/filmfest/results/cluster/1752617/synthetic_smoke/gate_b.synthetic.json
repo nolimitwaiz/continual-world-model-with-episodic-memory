@@ -1,0 +1,31 @@
+{
+  "coverage": {
+    "minimum_questions": 20,
+    "minimum_stories": 3,
+    "pass": false,
+    "questions": 3,
+    "stories": 2
+  },
+  "dense_failure": {
+    "ci95_story_bootstrap": [
+      null,
+      null
+    ],
+    "criterion_pass": false,
+    "delta_long_low_minus_local_high": null,
+    "valid_bootstrap_resamples": 0
+  },
+  "oracle_opportunity": {
+    "ci95_story_bootstrap": [
+      null,
+      null
+    ],
+    "criterion_pass": false,
+    "mean_oracle_minus_dense_target": null,
+    "valid_bootstrap_resamples": 0
+  },
+  "reason": "insufficient target-cell coverage",
+  "requested_bootstrap_resamples": 10000,
+  "seed": 20220811,
+  "status": "inconclusive"
+}

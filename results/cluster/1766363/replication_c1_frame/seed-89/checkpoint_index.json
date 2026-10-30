@@ -1,0 +1,212 @@
+[
+  {
+    "elapsed_seconds": 715.2864684257656,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.22608695652173913,
+      "causal_correct": 52,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.34375,
+      "retrieval_recall_at_four": 0.20703125,
+      "retrieval_target_available": 106,
+      "state_accuracy": 0.4397163120567376,
+      "state_correct": 124,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 100
+  },
+  {
+    "elapsed_seconds": 1425.2778390422463,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.22608695652173913,
+      "causal_correct": 52,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.37890625,
+      "retrieval_recall_at_four": 0.212890625,
+      "retrieval_target_available": 109,
+      "state_accuracy": 0.5035460992907801,
+      "state_correct": 142,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 200
+  },
+  {
+    "elapsed_seconds": 2133.90618127957,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.23043478260869565,
+      "causal_correct": 53,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.38671875,
+      "retrieval_recall_at_four": 0.21875,
+      "retrieval_target_available": 112,
+      "state_accuracy": 0.5141843971631206,
+      "state_correct": 145,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 300
+  },
+  {
+    "elapsed_seconds": 2849.4096206203103,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.24347826086956523,
+      "causal_correct": 56,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.408203125,
+      "retrieval_recall_at_four": 0.224609375,
+      "retrieval_target_available": 115,
+      "state_accuracy": 0.5425531914893617,
+      "state_correct": 153,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 400
+  },
+  {
+    "elapsed_seconds": 3556.350520887412,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.24782608695652175,
+      "causal_correct": 57,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.390625,
+      "retrieval_recall_at_four": 0.234375,
+      "retrieval_target_available": 120,
+      "state_accuracy": 0.5070921985815603,
+      "state_correct": 143,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 500
+  },
+  {
+    "elapsed_seconds": 4258.067500616424,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.25217391304347825,
+      "causal_correct": 58,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.41015625,
+      "retrieval_recall_at_four": 0.248046875,
+      "retrieval_target_available": 127,
+      "state_accuracy": 0.5390070921985816,
+      "state_correct": 152,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 600
+  },
+  {
+    "elapsed_seconds": 4960.252819444053,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.27391304347826084,
+      "causal_correct": 63,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.427734375,
+      "retrieval_recall_at_four": 0.25390625,
+      "retrieval_target_available": 130,
+      "state_accuracy": 0.5531914893617021,
+      "state_correct": 156,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 700
+  },
+  {
+    "elapsed_seconds": 5662.026415375061,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.26521739130434785,
+      "causal_correct": 61,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.416015625,
+      "retrieval_recall_at_four": 0.275390625,
+      "retrieval_target_available": 141,
+      "state_accuracy": 0.5390070921985816,
+      "state_correct": 152,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 800
+  },
+  {
+    "elapsed_seconds": 6364.759783769026,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.26956521739130435,
+      "causal_correct": 62,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.44921875,
+      "retrieval_recall_at_four": 0.27734375,
+      "retrieval_target_available": 142,
+      "state_accuracy": 0.5957446808510638,
+      "state_correct": 168,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 900
+  },
+  {
+    "elapsed_seconds": 7058.646087314002,
+    "latest_validation": {
+      "boundary_f1": null,
+      "boundary_false_negatives": null,
+      "boundary_false_positives": null,
+      "boundary_true_positives": null,
+      "causal_accuracy": 0.27391304347826084,
+      "causal_correct": 63,
+      "causal_examples": 230,
+      "examples": 512,
+      "long_delay_memory_score": 0.462890625,
+      "retrieval_recall_at_four": 0.271484375,
+      "retrieval_target_available": 139,
+      "state_accuracy": 0.6170212765957447,
+      "state_correct": 174,
+      "state_examples": 282
+    },
+    "path": "<CLUSTER_PATH>",
+    "step": 1000
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "artifact_type": "cmwm_next_stage_preparation_v1",
+  "status": "draft_local_code_only",
+  "protocol_frozen": false,
+  "execution_authorized": false,
+  "test_access_authorized": false,
+  "training_authorized": false,
+  "synthetic_confirmation": {
+    "question": "Does the E3 event-memory benefit survive genuinely held-out situations?",
+    "conditions": [
+      "context_only",
+      "frame_memory",
+      "fixed_chunks",
+      "random_matched",
+      "oracle_events"
+    ],
+    "seeds": [
+      11,
+      23,
+      47,
+      89,
+      131
+    ],
+    "checkpoint_step": 1000,
+    "checkpoint_policy": "reuse all 25 final E3 checkpoints, including seed 89; no best-checkpoint selection",
+    "families": [
+      "HF-A",
+      "HF-B"
+    ],
+    "tasks": [
+      "delayed_state",
+      "object_location_history",
+      "occlusion_continuity",
+      "causal_predecessor"
+    ],
+    "lags": [
+      64,
+      128
+    ],
+    "examples_per_cell": 64,
+    "episode_contract": "one assigned lag per episode, exactly one question for each of four tasks",
+    "primary_baseline": "fixed_chunks",
+    "baseline_selection": "highest E3 non-event development mean; chosen before any new held-out access",
+    "mandatory_secondary_baseline": "random_matched",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260930,
+    "new_heldout_generator_id": null,
+    "sealed_cohort_sha256": null,
+    "checkpoint_manifest_sha256": null,
+    "blockers": [
+      "Implement and audit new shortcut-resistant held-out families; current E3 TEST path falls back to older single-object templates.",
+      "Review the proposed rectangular episode/cohort restriction and nested-bootstrap sensitivity to shared worlds.",
+      "Freeze dataset novelty checks, query identities, source hashes and checkpoint hashes before evaluation.",
+      "Implement checkpoint-loading evaluation and verify vocabulary/entity-slot compatibility without fitting on test.",
+      "Complete matched-resource and checkpoint-provenance audits; statistics alone cannot pass G1.",
+      "Obtain a separate execution and held-out-access authorization."
+    ]
+  },
+  "sherlock_dense_development": {
+    "question": "Does human event grouping improve recall-to-story retrieval with equal vector storage?",
+    "data_source_protocol": "configs/chen/sherlock_graph_free_bm25_v2.json",
+    "active_split": "development",
+    "sealed_test_authorized": false,
+    "atomic_rows": 1000,
+    "records_per_condition": 50,
+    "fixed_size": 20,
+    "conditions": [
+      "fixed_chunks",
+      "random_matched",
+      "human_events"
+    ],
+    "random_seeds": [
+      11,
+      23,
+      47,
+      89,
+      131,
+      197,
+      263,
+      347,
+      419,
+      503
+    ],
+    "encoder": {
+      "model_id": null,
+      "revision_sha": null,
+      "dimension": null
+    },
+    "encoding_policy": "encode each atomic description and development query once from text only; normalize atomic vectors, mean-pool per record, normalize again",
+    "long_text_policy": null,
+    "storage": "one float32 vector and two uint32 span bounds per record; no record source text is returned to a model",
+    "retrieval": "common dot-product ranking of normalized vectors; chronological tie break",
+    "cutoff": 5,
+    "primary_metric": "participant-macro maximum-IoU-target hit@5, retained from the v2 development protocol",
+    "primary_contrast": "human_events minus mean of ten random-matched groupings; fixed chunks always reported",
+    "blockers": [
+      "Select and pin one frozen text encoder and tokenizer revision without a result-based model search.",
+      "Freeze a long-query/atomic-text policy with no silent truncation and report its coverage.",
+      "Build provenance-checked embedding cache and cluster-only runner that excludes sealed subjects before encoding.",
+      "Audit the original source files and text/vector identity mapping; do not alter the v1/v2 results.",
+      "Add participant-level paired uncertainty, averaging random groupings within participant rather than treating ten groupings as ten people.",
+      "Review the remaining human-scene target-alignment bias; this is development retrieval evidence, not human recall prediction.",
+      "Obtain separate execution authorization; sealed five-person test remains closed."
+    ]
+  }
+}

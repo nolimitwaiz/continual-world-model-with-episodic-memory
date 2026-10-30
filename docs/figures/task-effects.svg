@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="625" viewBox="0 0 1100 625" role="img" aria-label="E3 effect depends on the task">
+<title>E3 effect depends on the task</title><desc>Mean paired oracle-minus-fixed difference. Descriptive taskwise effects; no multiplicity adjustment.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607083"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172C43} .small{fill:#526579}</style>
+<rect width="1100" height="625" fill="#FFFFFF"/>
+<text x="36" y="42" font-size="26" font-weight="700" text-anchor="start" style="fill:#172C43">E3 effect depends on the task</text>
+<text x="36" y="72" font-size="16" font-weight="400" text-anchor="start" style="fill:#526579">Mean paired oracle-minus-fixed difference. Descriptive taskwise effects; no multiplicity adjustment.</text>
+<line x1="460.0" y1="120" x2="460.0" y2="535" stroke="#E0E7ED" stroke-width="1"/>
+<text x="460.0" y="563" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">-10</text>
+<line x1="540.0" y1="120" x2="540.0" y2="535" stroke="#91A0AF" stroke-width="2"/>
+<text x="540.0" y="563" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">0</text>
+<line x1="620.0" y1="120" x2="620.0" y2="535" stroke="#E0E7ED" stroke-width="1"/>
+<text x="620.0" y="563" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">+10</text>
+<line x1="700.0" y1="120" x2="700.0" y2="535" stroke="#E0E7ED" stroke-width="1"/>
+<text x="700.0" y="563" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">+20</text>
+<line x1="780.0" y1="120" x2="780.0" y2="535" stroke="#E0E7ED" stroke-width="1"/>
+<text x="780.0" y="563" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">+30</text>
+<line x1="860.0" y1="120" x2="860.0" y2="535" stroke="#E0E7ED" stroke-width="1"/>
+<text x="860.0" y="563" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">+40</text>
+<line x1="940.0" y1="120" x2="940.0" y2="535" stroke="#E0E7ED" stroke-width="1"/>
+<text x="940.0" y="563" font-size="15" font-weight="400" text-anchor="middle" style="fill:#172C43">+50</text>
+<text x="36" y="150" font-size="18" font-weight="400" text-anchor="start" style="fill:#172C43">delayed state · lag 64</text>
+<line x1="540.0" y1="145" x2="777.5" y2="145" stroke="#007E78" stroke-width="4"/>
+<circle cx="777.5" cy="145" r="6" fill="#007E78" stroke="none"/>
+<text x="789.5" y="150" font-size="16" font-weight="700" text-anchor="start" style="fill:#172C43">+29.69</text>
+<text x="36" y="202" font-size="18" font-weight="400" text-anchor="start" style="fill:#172C43">delayed state · lag 128</text>
+<line x1="540.0" y1="197" x2="812.5" y2="197" stroke="#007E78" stroke-width="4"/>
+<circle cx="812.5" cy="197" r="6" fill="#007E78" stroke="none"/>
+<text x="824.5" y="202" font-size="16" font-weight="700" text-anchor="start" style="fill:#172C43">+34.06</text>
+<text x="36" y="254" font-size="18" font-weight="400" text-anchor="start" style="fill:#172C43">object location history · lag 64</text>
+<line x1="540.0" y1="249" x2="532.5" y2="249" stroke="#B34F40" stroke-width="4"/>
+<circle cx="532.5" cy="249" r="6" fill="#B34F40" stroke="none"/>
+<text x="520.5" y="254" font-size="16" font-weight="700" text-anchor="end" style="fill:#172C43">-0.94</text>
+<text x="36" y="306" font-size="18" font-weight="400" text-anchor="start" style="fill:#172C43">object location history · lag 128</text>
+<line x1="540.0" y1="301" x2="535.0" y2="301" stroke="#B34F40" stroke-width="4"/>
+<circle cx="535.0" cy="301" r="6" fill="#B34F40" stroke="none"/>
+<text x="523.0" y="306" font-size="16" font-weight="700" text-anchor="end" style="fill:#172C43">-0.63</text>
+<text x="36" y="358" font-size="18" font-weight="400" text-anchor="start" style="fill:#172C43">occlusion continuity · lag 64</text>
+<line x1="540.0" y1="353" x2="857.5" y2="353" stroke="#007E78" stroke-width="4"/>
+<circle cx="857.5" cy="353" r="6" fill="#007E78" stroke="none"/>
+<text x="869.5" y="358" font-size="16" font-weight="700" text-anchor="start" style="fill:#172C43">+39.69</text>
+<text x="36" y="410" font-size="18" font-weight="400" text-anchor="start" style="fill:#172C43">occlusion continuity · lag 128</text>
+<line x1="540.0" y1="405" x2="897.5" y2="405" stroke="#007E78" stroke-width="4"/>
+<circle cx="897.5" cy="405" r="6" fill="#007E78" stroke="none"/>
+<text x="909.5" y="410" font-size="16" font-weight="700" text-anchor="start" style="fill:#172C43">+44.69</text>
+<text x="36" y="462" font-size="18" font-weight="400" text-anchor="start" style="fill:#172C43">causal predecessor · lag 64</text>
+<line x1="540.0" y1="457" x2="527.5" y2="457" stroke="#B34F40" stroke-width="4"/>
+<circle cx="527.5" cy="457" r="6" fill="#B34F40" stroke="none"/>
+<text x="515.5" y="462" font-size="16" font-weight="700" text-anchor="end" style="fill:#172C43">-1.56</text>
+<text x="36" y="514" font-size="18" font-weight="400" text-anchor="start" style="fill:#172C43">causal predecessor · lag 128</text>
+<line x1="540.0" y1="509" x2="484.99999999999994" y2="509" stroke="#B34F40" stroke-width="4"/>
+<circle cx="484.99999999999994" cy="509" r="6" fill="#B34F40" stroke="none"/>
+<text x="472.99999999999994" y="514" font-size="16" font-weight="700" text-anchor="end" style="fill:#172C43">-6.88</text>
+<text x="700" y="605" font-size="17" font-weight="400" text-anchor="middle" style="fill:#172C43">Difference (percentage points)</text>
+</svg>

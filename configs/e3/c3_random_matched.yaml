@@ -1,0 +1,11 @@
+extends: base.yaml
+
+experiment:
+  name: e3_c3_random_matched
+
+prototype1:
+  boundary:
+    name: random_matched
+    threshold: null
+  memory:
+    name: event
