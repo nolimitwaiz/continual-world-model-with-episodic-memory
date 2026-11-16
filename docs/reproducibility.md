@@ -13,12 +13,36 @@ From the repository root, Python 3.11+:
 
 ```bash
 python scripts/verify_release.py
+python scripts/verify_research_summary.py
 python scripts/build_figures.py
 PYTHONPATH=src python -m unittest discover -s tests/unit -p test_next_stage_preparation.py
+python -m unittest discover -s tests/unit -p test_saved_endpoint_sensitivity.py
 ```
 
-No external packages are required by the release checker or SVG figure builder. The 17 preparation
-tests use constructed fixtures, not human participants, datasets, checkpoints or model training.
+No external packages are required by the release checkers or SVG figure builder. The 17 preparation
+tests and 9 scoring-audit tests use constructed fixtures, not model training. The summary checker
+also recalculates the saved scoring audit, the Sherlock random-group mean, and all six FilmFest
+reproduction checks. It does not recover missing E3 predictions or provide new-world validation.
+
+## Optional Figure and Proposal Export
+
+The SVG figures are the editable source images and are generated directly from saved JSON.
+For PNG copies, install Node.js and the `sharp` package in your own environment, then run:
+
+```bash
+node scripts/render_figures.cjs
+node scripts/render_figures.cjs --names overview --output docs/figures
+```
+
+The first command writes inspection images under the ignored `.preview/figures` directory.
+The second regenerates the PNG used in the proposal. The included two-page PDF is built
+from [research-brief.md](research-brief.md), using Python with `reportlab` and `pypdf` installed:
+
+```bash
+python scripts/build_research_brief.py
+```
+
+This is document generation only. Inspect both rendered pages after editing the proposal.
 
 ## Full software environment
 

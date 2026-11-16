@@ -1,6 +1,8 @@
 # Release verification
 
-Publication preparation on 30 October 2026 performs artifact checks, not new scientific experiments.
+The original publication copy was prepared on 30 October 2026. The 16 November update
+improves the research-facing documentation and adds a saved-result scoring audit, a
+short proposal, and clearer diagrams. These are artifact checks, not new experiments.
 
 ## Checks performed
 
@@ -11,8 +13,14 @@ Publication preparation on 30 October 2026 performs artifact checks, not new sci
   recomputed from the returned summary.
 - Sherlock's primary null result and sealed-test flags checked.
 - Source files parsed for syntax; current documentation links and SVG XML checked.
-- Seventeen tiny deterministic preparation unit tests passed. These are software tests, not model results.
-- Seven figures rendered and visually inspected; label bounds checked in a local browser.
+- Seventeen deterministic preparation tests and nine scoring-audit tests passed in the
+  16 November packaging environment. These are software tests, not model results.
+- The 11 November scoring audit was recomputed from included E2 predictions and E3 summaries.
+- Sherlock's ten random-grouping scores were averaged again; all six FilmFest reproduction
+  comparisons were checked against their declared tolerance. Headline documentation values
+  were checked against those artifacts.
+- Nine diagrams/plots and the two-page proposal were generated. Figures and PDF pages
+  were rendered and visually inspected before release.
 - Publication copy scanned for credential patterns, private absolute paths and private account references.
 
 ## What was not rerun
@@ -24,5 +32,8 @@ suite was not rerun in the packaging environment. Historical pass counts remain 
 E3 checkpoint tensors and original prediction files remain outside this release. Their contents
 were not re-evaluated during publication. Statistical arithmetic verification is not a new replication.
 
-Reproduce the release checks with `python scripts/verify_release.py`. After intentional changes,
-review them before using `python scripts/seal_release.py` to create a new release-file hash index.
+Reproduce the checks with `python scripts/verify_release.py` and
+`python scripts/verify_research_summary.py`. After intentional changes, review and stage
+only the files intended for publication, then use
+`python scripts/seal_release.py --release-date YYYY-MM-DD` to regenerate the hash index.
+The index covers tracked/staged files only, not private notes or untracked drafts.

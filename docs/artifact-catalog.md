@@ -29,7 +29,14 @@ This catalog indexes returned artifacts, not independent experiments. Many files
 | [1806501_e3_final](../results/cluster/1806501_e3_final/) | 1 | cmwm_e3_development_summary_v1 |
 | [e3_preflight_20260926](../results/cluster/e3_preflight_20260926/) | 2 | cmwm_development_endpoint_manifest_v1, cmwm_g0_attestation |
 
-## Historical FilmFest records
+## Later Analysis of Saved Results
+
+The [11 November sensitivity report](../results/analysis/saved_endpoint_sensitivity_2026-11-11/REPORT.md)
+and [machine-readable values](../results/analysis/saved_endpoint_sensitivity_2026-11-11/sensitivity.json)
+separate ordinary answers from source-record selection. This reuses existing E2/E3
+outputs; it is not a new training run or an independent replication.
+
+## Historical FilmFest Records
 
 Behavioral reproduction and exploratory graph diagnostics are separate from the symbolic model study. Predicted-graph targets are not independent ground truth.
 

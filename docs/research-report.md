@@ -1,6 +1,6 @@
 # Event-structured episodic memory under bounded storage
 
-Waiz Khan · Research discussion report · 30 October 2026
+Waiz Khan · Research discussion report · 30 October 2026, scoring interpretation updated 11 November
 
 ## Summary
 
@@ -64,9 +64,12 @@ endpoint balanced across four tasks and two lags. Fixed chunks scored 90.12%, ra
 and oracle event chunks 90.23%. The oracle-minus-fixed difference was only +0.12 percentage points;
 oracle-minus-random was +1.37 points, with a paired-seed interval spanning zero.
 
-Chunk memory substantially outperformed short context, but several task cells saturated because
-current-state or persistent-state shortcuts could answer the questions. Thus the study supported
-retention of older sources, not a strong event-segmentation claim.
+Chunk memory has a higher composite score than short context, but several task cells saturate
+because current-state or persistent-state shortcuts can answer the questions. The 11 November
+[scoring audit](../results/analysis/saved_endpoint_sensitivity_2026-11-11/REPORT.md) further shows
+that the composite gap is dominated by causal-pointer scoring. Ordinary answer accuracy is nearly
+tied for context and fixed chunks (86.61% versus 86.82%). The composite should therefore not be
+presented as evidence of a substantial general retention benefit, nor of event-specific improvement.
 
 ### E3: revised confusable experiences
 

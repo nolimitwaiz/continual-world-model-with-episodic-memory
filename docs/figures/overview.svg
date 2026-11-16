@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="265" viewBox="0 0 1100 265" role="img" aria-label="A small model with limited memory">
+<title>A small model with limited memory</title><desc>Simplified overview. A later question determines which stored records are read.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607083"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172C43} .small{fill:#526579}</style>
+<rect width="1100" height="265" fill="#FFFFFF"/>
+<text x="36" y="42" font-size="26" font-weight="700" text-anchor="start" style="fill:#172C43">A small model with limited memory</text>
+<text x="36" y="72" font-size="16" font-weight="400" text-anchor="start" style="fill:#526579">Simplified overview. A later question determines which stored records are read.</text>
+<rect x="36" y="115" width="235" height="84" rx="6" fill="#F0F4F8" stroke="none"/>
+<text x="51" y="146" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Experience</text>
+<text x="51" y="174" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">Symbolic states and actions</text>
+<line x1="271" y1="157" x2="290" y2="157" stroke="#DCE4EA" stroke-width="1" marker-end="url(#arrow)"/>
+<rect x="300" y="115" width="235" height="84" rx="6" fill="#F0F4F8" stroke="none"/>
+<text x="315" y="146" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Recent history</text>
+<text x="315" y="174" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">A small recurrent network</text>
+<line x1="535" y1="157" x2="554" y2="157" stroke="#DCE4EA" stroke-width="1" marker-end="url(#arrow)"/>
+<rect x="564" y="115" width="235" height="84" rx="6" fill="#E7F4F2" stroke="none"/>
+<text x="579" y="146" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Group and store</text>
+<text x="579" y="174" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">Up to 64 memory records</text>
+<line x1="799" y1="157" x2="818" y2="157" stroke="#DCE4EA" stroke-width="1" marker-end="url(#arrow)"/>
+<rect x="828" y="115" width="235" height="84" rx="6" fill="#F0F4F8" stroke="none"/>
+<text x="843" y="146" font-size="19" font-weight="700" text-anchor="start" style="fill:#172C43">Answer a question</text>
+<text x="843" y="174" font-size="15" font-weight="400" text-anchor="start" style="fill:#526579">Read up to four records</text>
+<text x="36" y="238" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Completed tests supply event boundaries. The full architecture includes a recent-context path to the answer.</text>
+</svg>

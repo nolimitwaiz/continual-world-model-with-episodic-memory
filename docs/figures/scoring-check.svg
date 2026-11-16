@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-label="The result depends on what is scored">
+<title>The result depends on what is scored</title><desc>E3 only. Later scoring check; the original main measure has not been replaced.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607083"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172C43} .small{fill:#526579}</style>
+<rect width="1100" height="560" fill="#FFFFFF"/>
+<text x="36" y="42" font-size="26" font-weight="700" text-anchor="start" style="fill:#172C43">The result depends on what is scored</text>
+<text x="36" y="72" font-size="16" font-weight="400" text-anchor="start" style="fill:#526579">E3 only. Later scoring check; the original main measure has not been replaced.</text>
+<text x="36" y="120" font-size="21" font-weight="700" text-anchor="start" style="fill:#172C43">Ordinary answers</text>
+<line x1="195.0" y1="148" x2="195.0" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="195.0" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">0</text>
+<line x1="262.5" y1="148" x2="262.5" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="262.5" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">25</text>
+<line x1="330.0" y1="148" x2="330.0" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="330.0" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">50</text>
+<line x1="397.5" y1="148" x2="397.5" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="397.5" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">75</text>
+<line x1="465.0" y1="148" x2="465.0" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="465.0" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">100</text>
+<text x="36" y="191" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Fixed chunks</text>
+<rect x="195" y="170" width="114.890625" height="30" rx="6" fill="#4778BA" stroke="none"/>
+<circle cx="311.71875" cy="176" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="292.734375" cy="180" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="315.234375" cy="184" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="322.265625" cy="188" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="307.5" cy="192" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<text x="480" y="191" font-size="15" font-weight="700" text-anchor="start" style="fill:#172C43">42.55</text>
+<text x="36" y="256" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Random chunks</text>
+<rect x="195" y="235" width="117.140625" height="30" rx="6" fill="#A76B23" stroke="none"/>
+<circle cx="315.234375" cy="241" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="308.203125" cy="245" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="315.234375" cy="249" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="318.75" cy="253" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="303.28125" cy="257" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<text x="480" y="256" font-size="15" font-weight="700" text-anchor="start" style="fill:#172C43">43.39</text>
+<text x="36" y="321" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Events (given)</text>
+<rect x="195" y="300" width="180.84375" height="30" rx="6" fill="#007E78" stroke="none"/>
+<circle cx="379.921875" cy="306" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="384.140625" cy="310" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="401.015625" cy="314" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="313.125" cy="318" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="401.015625" cy="322" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<text x="480" y="321" font-size="15" font-weight="700" text-anchor="start" style="fill:#172C43">66.98</text>
+<text x="330.0" y="425" font-size="16" font-weight="400" text-anchor="middle" style="fill:#172C43">Accuracy (%)</text>
+<text x="36" y="465" font-size="18" font-weight="700" text-anchor="start" style="fill:#172C43">Events minus fixed: +24.43 points</text>
+<text x="586" y="120" font-size="21" font-weight="700" text-anchor="start" style="fill:#172C43">Select a source record</text>
+<line x1="745.0" y1="148" x2="745.0" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="745.0" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">0</text>
+<line x1="812.5" y1="148" x2="812.5" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="812.5" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">25</text>
+<line x1="880.0" y1="148" x2="880.0" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="880.0" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">50</text>
+<line x1="947.5" y1="148" x2="947.5" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="947.5" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">75</text>
+<line x1="1015.0" y1="148" x2="1015.0" y2="365" stroke="#DCE4EA" stroke-width="1"/>
+<text x="1015.0" y="391" font-size="14" font-weight="400" text-anchor="middle" style="fill:#172C43">100</text>
+<text x="586" y="191" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Fixed chunks</text>
+<rect x="745" y="170" width="263.25" height="30" rx="6" fill="#4778BA" stroke="none"/>
+<circle cx="1012.890625" cy="176" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="1004.453125" cy="180" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="1002.34375" cy="184" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="1010.78125" cy="188" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="1010.78125" cy="192" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<text x="1030" y="191" font-size="15" font-weight="700" text-anchor="start" style="fill:#172C43">97.50</text>
+<text x="586" y="256" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Random chunks</text>
+<rect x="745" y="235" width="250.59375" height="30" rx="6" fill="#A76B23" stroke="none"/>
+<circle cx="1002.34375" cy="241" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="989.6875" cy="245" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="989.6875" cy="249" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="998.125" cy="253" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="998.125" cy="257" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<text x="1030" y="256" font-size="15" font-weight="700" text-anchor="start" style="fill:#172C43">92.81</text>
+<text x="586" y="321" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Events (given)</text>
+<rect x="745" y="300" width="251.859375" height="30" rx="6" fill="#007E78" stroke="none"/>
+<circle cx="1000.234375" cy="306" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="998.125" cy="310" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="993.90625" cy="314" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="996.015625" cy="318" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<circle cx="996.015625" cy="322" r="3.6" fill="#FFFFFF" stroke="#172C43"/>
+<text x="1030" y="321" font-size="15" font-weight="700" text-anchor="start" style="fill:#172C43">93.28</text>
+<text x="880.0" y="425" font-size="16" font-weight="400" text-anchor="middle" style="fill:#172C43">Accuracy (%)</text>
+<text x="586" y="465" font-size="18" font-weight="700" text-anchor="start" style="fill:#172C43">Events minus fixed: -4.22 points</text>
+<text x="36" y="514" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Dots show five training seeds on reused development questions. Different tasks, different target spaces.</text>
+</svg>

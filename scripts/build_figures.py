@@ -8,7 +8,7 @@ import json
 ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT / "docs/figures"
 ORDER = ["context_only", "frame_memory", "fixed_chunks", "random_matched", "oracle_events"]
-LABELS = ["Context only", "Frame FIFO", "Fixed chunks", "Random matched", "Oracle events"]
+LABELS = ["Recent history", "Single steps", "Fixed chunks", "Random chunks", "Events (given)"]
 COLORS = ["#8796A5", "#657A8E", "#4778BA", "#A76B23", "#007E78"]
 
 def load(relative):
@@ -49,26 +49,36 @@ class SVG:
         (FIG / name).write_text("\n".join(self.parts + ["</svg>"]) + "\n")
 
 def architecture():
-    p=SVG("Implemented symbolic memory prototype", "C0–C4 vary memory organization; the backbone and training policy are controlled.",590)
-    p.box(36,120,245,"Symbolic observations","State + observed actions")
-    p.box(330,120,260,"Shared-design adapters","128-dimensional step vector")
-    p.box(650,120,365,"Local-context GRU","Hidden state resets between blocks")
+    p=SVG("A small model with limited memory", "Simplified overview. A later question determines which stored records are read.",265)
+    boxes=[(36,"Experience","Symbolic states and actions"),
+           (300,"Recent history","A small recurrent network"),
+           (564,"Group and store","Up to 64 memory records"),
+           (828,"Answer a question","Read up to four records")]
+    for i,(x,title,detail) in enumerate(boxes):
+        p.box(x,115,235,title,detail,accent=(i==2))
+        if i<3:p.line(x+235,157,x+254,157,arrow=True)
+    p.text(36,238,"Completed tests supply event boundaries. The full architecture includes a recent-context path to the answer.",16)
+    p.save("overview.svg")
+    p=SVG("The current memory model", "The experiment changes how experience is grouped into stored records.",590)
+    p.box(36,120,245,"Simulated experience","States + observed actions")
+    p.box(330,120,260,"Input representation","128 numbers per step")
+    p.box(650,120,365,"Recent-history network","GRU; resets between short blocks")
     p.line(281,162,320,162,arrow=True); p.line(590,162,640,162,arrow=True)
-    p.box(650,275,365,"Grouping + key/value writer","Fixed / random / supplied events",accent=True)
-    p.box(330,275,260,"Bounded episodic store","64 records · FIFO eviction",accent=True)
-    p.box(36,275,245,"Question representation","Query encoder")
+    p.box(650,275,365,"Group steps into memories","Individual / fixed / random / event",accent=True)
+    p.box(330,275,260,"Stored memories","64 records; oldest leaves first",accent=True)
+    p.box(36,275,245,"A later question","Converted to a query vector")
     p.line(832,204,832,265,arrow=True)
     p.line(650,317,600,317,arrow=True)
-    p.box(330,430,260,"Query-conditioned read","Retrieve up to four records")
-    p.box(650,430,365,"Answer head","Current context + retrieved records")
+    p.box(330,430,260,"Read relevant memories","Select up to four records")
+    p.box(650,430,365,"Answer the question","Recent history + selected records")
     p.line(460,359,460,420,arrow=True)
     p.path([(158,359),(158,472),(320,472)],arrow=True)
     p.line(590,472,640,472,arrow=True)
     p.path([(1015,162),(1052,162),(1052,410),(832,410),(832,420)],arrow=True)
-    p.text(36,556,"Oracle boundaries are supplied. Learned boundaries and multimodal transfer are not validated results.",16)
+    p.text(36,556,"Event boundaries are supplied. Inputs are symbolic, not images, speech, or brain activity.",16)
     p.save("architecture.svg")
     p=SVG("Grouping is the intervention", "Schematic example: the same latent stream can be written into different memory records.",465)
-    labels=["Individual frames","Fixed chunks","Random matched","Event aligned"]
+    labels=["Individual steps","Fixed chunks","Random chunks","Event aligned"]
     groups=[[1]*12,[3,3,3,3],[2,5,2,3],[3,2,5,2]]
     for row,(label,lengths) in enumerate(zip(labels,groups)):
         y=120+row*75
@@ -117,7 +127,7 @@ def results(e3):
             for j,v in enumerate(scores[key]):
                 p.circle(left+width*v,y+6+j*4,3.6,"#FFFFFF","#172C43")
             p.text(offset+480,y+21,f"{mean(scores[key])*100:.1f}",15,weight=700)
-        p.text(left+width/2,510,"Task/lag-macro accuracy (%)",16,anchor="middle")
+        p.text(left+width/2,510,"Original combined score (%)",16,anchor="middle")
     p.save("results.svg")
     p=SVG("E3 effect depends on the task", "Mean paired oracle-minus-fixed difference. Descriptive taskwise effects; no multiplicity adjustment.",625)
     tasks=list(e3["task_lag_scores_by_condition"]["oracle_events"])
@@ -170,11 +180,39 @@ def sherlock():
     p.text(36,568,"401 development queries · 12 participants · BM25 costs not byte-matched · no raw fMRI",16)
     p.save("sherlock.svg")
 
+def scoring_check():
+    data=load("results/analysis/saved_endpoint_sensitivity_2026-11-11/sensitivity.json")
+    p=SVG("The result depends on what is scored", "E3 only. Later scoring check; the original main measure has not been replaced.",560)
+    panels=[("Ordinary answers", "answer_tasks_only"), ("Select a source record", "pointer_task_only")]
+    for panel,(title,group_name) in enumerate(panels):
+        offset=panel*550
+        group=data["E3"]["groups"][group_name]
+        p.text(offset+36,120,title,21,weight=700)
+        left=offset+195; width=270
+        for tick in [0,25,50,75,100]:
+            x=left+width*tick/100
+            p.line(x,148,x,365)
+            p.text(x,391,tick,14,anchor="middle")
+        for i,key in enumerate(ORDER[2:]):
+            y=170+i*65
+            p.text(offset+36,y+21,LABELS[i+2],16)
+            score=group["means"][key]
+            p.rect(left,y,score*width,30,COLORS[i+2])
+            for j,value in enumerate(group["scores_in_seed_order"][key]):
+                p.circle(left+width*value,y+6+j*4,3.6,"#FFFFFF","#172C43")
+            p.text(offset+480,y+21,f"{score*100:.2f}",15,weight=700)
+        p.text(left+width/2,425,"Accuracy (%)",16,anchor="middle")
+        contrast=group["oracle_minus_fixed"]
+        p.text(offset+36,465,f"Events minus fixed: {contrast['mean_delta']*100:+.2f} points",18,weight=700)
+    p.text(36,514,"Dots show five training seeds on reused development questions. Different tasks, different target spaces.",16)
+    p.save("scoring-check.svg")
+
 def main():
     FIG.mkdir(parents=True,exist_ok=True)
     architecture()
     results(load("results/cluster/1806501_e3_final/summary.json"))
     sherlock()
-    print("Generated 7 SVG figures from stored results and labeled architecture specifications.")
+    scoring_check()
+    print("Generated 9 SVG figures from stored results and labeled architecture specifications.")
 
 if __name__=="__main__":main()

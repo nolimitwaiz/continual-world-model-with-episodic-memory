@@ -5,15 +5,23 @@ general structure. The following ideas are retained hypotheses, not a list of co
 
 ![Proposed architecture](figures/roadmap.svg)
 
-## Immediate decisions
+## Next Comparisons to Define Before Running
 
-1. Freeze a small diagnostic rubric before running additional comparisons. Text-first memory
-   validation is the current recommendation; the older vision/speech configuration remains an
-   unfrozen proposal, not a silently approved protocol.
-2. Repair held-out E3 world construction and audit source availability, retention, byte budgets
+The [short research proposal](research-brief.md) gives a discussion-ready experiment:
+test whether memory distinguishes histories with similar details but different relationships
+or action order. It is a proposal, not a new completed result or a launch instruction.
+
+1. Repair held-out E3 world construction and audit source availability, retention, byte budgets,
    and matched training duration before independent confirmation.
-3. Preserve the Sherlock primary null result. Any revised dense-retrieval study requires a new
-   declared protocol and must not tune on its sealed participants.
+2. Separate grouping from stored content in a controlled relationship-memory task. Freeze its
+   questions, baselines, and main measure before inspecting new test outcomes.
+3. Preserve the Sherlock primary null. A new dense-retrieval study needs an independently
+   declared protocol and must not tune on the five sealed participants.
+4. Retain the visual-memory branch: observation-only rendered worlds, then a carefully audited
+   CATER subset. Visual preparation is not evidence of visual training or successful transfer.
+
+The longer-term tracks below remain in the plan. A compact proposal does not remove them;
+it selects one question that can be tested without changing every component at once.
 
 No new training or cluster submission is authorized by publishing this repository.
 

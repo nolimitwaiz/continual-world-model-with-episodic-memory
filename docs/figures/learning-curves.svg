@@ -34,7 +34,7 @@
 <circle cx="907.2222222222222" cy="363.845703125" r="3.5" fill="#8796A5" stroke="none"/>
 <circle cx="1010.0" cy="371.123046875" r="3.5" fill="#8796A5" stroke="none"/>
 <line x1="75" y1="577" x2="100" y2="577" stroke="#8796A5" stroke-width="4"/>
-<text x="108" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Context only</text>
+<text x="108" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Recent history</text>
 <polyline points="85.0,399.962890625 187.77777777777777,387.16015625 290.55555555555554,387.16015625 393.3333333333333,380.15234375 496.1111111111111,383.791015625 598.8888888888889,377.322265625 701.6666666666666,379.748046875 804.4444444444445,375.166015625 907.2222222222222,375.03125 1010.0,376.783203125" fill="none" stroke="#657A8E" stroke-width="3"/>
 <circle cx="85.0" cy="399.962890625" r="3.5" fill="#657A8E" stroke="none"/>
 <circle cx="187.77777777777777" cy="387.16015625" r="3.5" fill="#657A8E" stroke="none"/>
@@ -47,7 +47,7 @@
 <circle cx="907.2222222222222" cy="375.03125" r="3.5" fill="#657A8E" stroke="none"/>
 <circle cx="1010.0" cy="376.783203125" r="3.5" fill="#657A8E" stroke="none"/>
 <line x1="280" y1="577" x2="305" y2="577" stroke="#657A8E" stroke-width="4"/>
-<text x="313" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Frame FIFO</text>
+<text x="313" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Single steps</text>
 <polyline points="85.0,297.40625 187.77777777777777,302.796875 290.55555555555554,294.44140625 393.3333333333333,294.171875 496.1111111111111,290.66796875 598.8888888888889,289.994140625 701.6666666666666,293.498046875 804.4444444444445,288.51171875 907.2222222222222,291.880859375 1010.0,290.802734375" fill="none" stroke="#4778BA" stroke-width="3"/>
 <circle cx="85.0" cy="297.40625" r="3.5" fill="#4778BA" stroke="none"/>
 <circle cx="187.77777777777777" cy="302.796875" r="3.5" fill="#4778BA" stroke="none"/>
@@ -73,7 +73,7 @@
 <circle cx="907.2222222222222" cy="290.802734375" r="3.5" fill="#A76B23" stroke="none"/>
 <circle cx="1010.0" cy="292.689453125" r="3.5" fill="#A76B23" stroke="none"/>
 <line x1="690" y1="577" x2="715" y2="577" stroke="#A76B23" stroke-width="4"/>
-<text x="723" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Random matched</text>
+<text x="723" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Random chunks</text>
 <polyline points="85.0,301.044921875 187.77777777777777,294.7109375 290.55555555555554,295.654296875 393.3333333333333,284.873046875 496.1111111111111,292.28515625 598.8888888888889,286.220703125 701.6666666666666,276.517578125 804.4444444444445,256.70703125 907.2222222222222,247.00390625 1010.0,231.236328125" fill="none" stroke="#007E78" stroke-width="3"/>
 <circle cx="85.0" cy="301.044921875" r="3.5" fill="#007E78" stroke="none"/>
 <circle cx="187.77777777777777" cy="294.7109375" r="3.5" fill="#007E78" stroke="none"/>
@@ -86,7 +86,7 @@
 <circle cx="907.2222222222222" cy="247.00390625" r="3.5" fill="#007E78" stroke="none"/>
 <circle cx="1010.0" cy="231.236328125" r="3.5" fill="#007E78" stroke="none"/>
 <line x1="895" y1="577" x2="920" y2="577" stroke="#007E78" stroke-width="4"/>
-<text x="928" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Oracle events</text>
+<text x="928" y="582" font-size="15" font-weight="400" text-anchor="start" style="fill:#172C43">Events (given)</text>
 <text x="36" y="118" font-size="16" font-weight="400" text-anchor="start" style="fill:#172C43">Accuracy (%)</text>
 <text x="550" y="545" font-size="17" font-weight="400" text-anchor="middle" style="fill:#172C43">Training updates</text>
 </svg>

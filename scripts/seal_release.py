@@ -1,22 +1,32 @@
 #!/usr/bin/env python3
 """Record hashes for a deliberately reviewed release; never changes research artifacts."""
 from pathlib import Path
+import argparse
 import hashlib
 import json
+import subprocess
 
 ROOT=Path(__file__).resolve().parents[1]
-SKIP={'.git','.preview','__pycache__','.venv','.pytest_cache','.ruff_cache'}
 TARGET=ROOT/'provenance/release_files.json'
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--release-date',required=True,help='Reviewed release date, YYYY-MM-DD')
+    args=parser.parse_args()
     files=[]
-    for path in sorted(ROOT.rglob('*')):
-        rel=path.relative_to(ROOT)
-        if not path.is_file() or path==TARGET or any(part in SKIP for part in rel.parts):continue
-        if path.suffix in {'.pyc','.pyo'}:continue
+    # Only intentionally tracked/staged files belong to the publication inventory.
+    # Never sweep private notes, untracked drafts, credentials, or local caches.
+    names=subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0')
+    for name in sorted(set(names)-{''}):
+        path=ROOT/name
+        if path==TARGET:continue
+        if path.is_symlink() or not path.is_file():
+            raise ValueError(f'Publication file is missing or a symlink: {name}')
         raw=path.read_bytes()
-        files.append({'path':rel.as_posix(),'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw)})
-    TARGET.write_text(json.dumps({'release_date':'2026-10-30','files':files},indent=2)+'\n')
+        files.append({'path':name,'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw)})
+    TARGET.write_text(json.dumps({'release_date':args.release_date,
+                                 'scope':'Reviewed tracked files only; private and untracked work excluded',
+                                 'files':files},indent=2)+'\n')
     print(json.dumps({'sealed_files':len(files),'bytes':sum(v['bytes'] for v in files)}))
 
 if __name__=='__main__':main()
