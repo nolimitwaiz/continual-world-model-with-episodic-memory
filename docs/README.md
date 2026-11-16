@@ -1,10 +1,10 @@
 # Documentation Guide
 
-Start with the [project overview](../README.md) or the [short proposal](research-brief.md).
+Start with the [project overview](../README.md) or the [research report](research-report.md).
 
 | Question | Document |
 |---|---|
-| What is the research question? | [Short proposal](research-brief.md) · [Two-page PDF](../output/pdf/Remembering-Events-Research-Proposal.pdf) |
+| What is the research question? | [Question and scope](research-report.md#question-and-scope) |
 | What happened in the experiments? | [Results and plots](results.md) |
 | What exactly was built? | [Architecture and source-code guide](architecture.md) |
 | What are the methods and limitations? | [Full research report](research-report.md) |

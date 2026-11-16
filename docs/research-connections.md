@@ -32,8 +32,8 @@ Sherlock analysis checks one text-retrieval setup using naturalistic annotations
 retains the negative main result. Together they identify a question for a better test:
 is the benefit due to boundaries, preserved content, or how one memory connects to another?
 
-They do not yet separate these explanations. The [short proposal](research-brief.md)
-sets out a paired-history experiment and the controls needed to make that separation.
+They do not yet separate these explanations. The [research roadmap](roadmap.md)
+lists comparisons and controls needed to make that separation.
 The [full results](results.md) keep development findings, reproduction, and exploratory
 diagnostics distinct.
 

@@ -7,9 +7,8 @@ general structure. The following ideas are retained hypotheses, not a list of co
 
 ## Next Comparisons to Define Before Running
 
-The [short research proposal](research-brief.md) gives a discussion-ready experiment:
-test whether memory distinguishes histories with similar details but different relationships
-or action order. It is a proposal, not a new completed result or a launch instruction.
+One planned comparison tests whether memory distinguishes histories with similar details
+but different relationships or action order. It is not a completed result or a launch instruction.
 
 1. Repair held-out E3 world construction and audit source availability, retention, byte budgets,
    and matched training duration before independent confirmation.
@@ -20,8 +19,8 @@ or action order. It is a proposal, not a new completed result or a launch instru
 4. Retain the visual-memory branch: observation-only rendered worlds, then a carefully audited
    CATER subset. Visual preparation is not evidence of visual training or successful transfer.
 
-The longer-term tracks below remain in the plan. A compact proposal does not remove them;
-it selects one question that can be tested without changing every component at once.
+The longer-term tracks below remain in the plan. The next controlled comparison should
+test one question without changing every component at once.
 
 No new training or cluster submission is authorized by publishing this repository.
 

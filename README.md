@@ -15,7 +15,6 @@ continually learning world model.
 
 | If you want to... | Open this |
 |---|---|
-| Understand the question and proposed next experiment | [Short research proposal](docs/research-brief.md) · [Two-page PDF](output/pdf/Remembering-Events-Research-Proposal.pdf) |
 | See what worked, what did not, and the actual numbers | [Results and plots](docs/results.md) |
 | Understand the model and find its code | [Architecture and code guide](docs/architecture.md) |
 | Read the full account of the completed experiments | [Research report](docs/research-report.md) |
@@ -67,7 +66,7 @@ main measure. [See the scoring audit and its limits](results/analysis/saved_endp
 
 The next proposed test keeps people, objects, and wording similar while changing who did
 what, the order of actions, or the outcome. It asks whether memory preserves the difference.
-The [short proposal](docs/research-brief.md) explains the controls and possible outcomes.
+The [research roadmap](docs/roadmap.md) lists the next comparisons and remaining controls.
 
 ## Check the Saved Results Without Training
 
@@ -89,8 +88,7 @@ for the optional full software environment and remaining reproducibility limits.
 ## Repository Guide
 
 ```text
-docs/           Short proposal, full report, architecture, results, and figures
-output/pdf/     Shareable two-page research proposal
+docs/           Research report, architecture, results, roadmap, and figures
 src/cmwm/       Model, memory, simulated-world generator, and evaluation code
 configs/        Configurations for the completed experiments and labeled drafts
 scripts/        Saved-result checks, figure builders, and guarded execution tools

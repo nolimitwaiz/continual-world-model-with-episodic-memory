@@ -24,7 +24,7 @@ tests and 9 scoring-audit tests use constructed fixtures, not model training. Th
 also recalculates the saved scoring audit, the Sherlock random-group mean, and all six FilmFest
 reproduction checks. It does not recover missing E3 predictions or provide new-world validation.
 
-## Optional Figure and Proposal Export
+## Optional Figure Export
 
 The SVG figures are the editable source images and are generated directly from saved JSON.
 For PNG copies, install Node.js and the `sharp` package in your own environment, then run:
@@ -35,14 +35,7 @@ node scripts/render_figures.cjs --names overview --output docs/figures
 ```
 
 The first command writes inspection images under the ignored `.preview/figures` directory.
-The second regenerates the PNG used in the proposal. The included two-page PDF is built
-from [research-brief.md](research-brief.md), using Python with `reportlab` and `pypdf` installed:
-
-```bash
-python scripts/build_research_brief.py
-```
-
-This is document generation only. Inspect both rendered pages after editing the proposal.
+The second regenerates the overview diagram's PNG copy. Neither command runs a model.
 
 ## Full software environment
 

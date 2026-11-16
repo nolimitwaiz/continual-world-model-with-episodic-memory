@@ -1,6 +1,6 @@
 # Results and Interpretation
 
-[Project home](../README.md) · [Short proposal](research-brief.md) · [Model and code](architecture.md)
+[Project home](../README.md) · [Research report](research-report.md) · [Model and code](architecture.md)
 
 ## The Main Results in Plain Language
 

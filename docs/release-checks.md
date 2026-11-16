@@ -1,8 +1,8 @@
 # Release verification
 
 The original publication copy was prepared on 30 October 2026. The 16 November update
-improves the research-facing documentation and adds a saved-result scoring audit, a
-short proposal, and clearer diagrams. These are artifact checks, not new experiments.
+improves the research-facing documentation and adds a saved-result scoring audit and
+clearer diagrams. These are artifact checks, not new experiments.
 
 ## Checks performed
 
@@ -19,8 +19,7 @@ short proposal, and clearer diagrams. These are artifact checks, not new experim
 - Sherlock's ten random-grouping scores were averaged again; all six FilmFest reproduction
   comparisons were checked against their declared tolerance. Headline documentation values
   were checked against those artifacts.
-- Nine diagrams/plots and the two-page proposal were generated. Figures and PDF pages
-  were rendered and visually inspected before release.
+- Nine diagrams/plots were generated, rendered, and visually inspected before release.
 - Publication copy scanned for credential patterns, private absolute paths and private account references.
 
 ## What was not rerun

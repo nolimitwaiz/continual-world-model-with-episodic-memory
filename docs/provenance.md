@@ -34,8 +34,8 @@ the historical experiment, not necessarily the sanitized file or current source 
 silently substitute new hashes into historical experiment identities. The release manifest and
 [file hashes](../provenance/release_files.json) describe this publication snapshot separately.
 
-The 16 November documentation update adds the 11 November saved-endpoint sensitivity
-analysis, its source-checking script and tests, and a short research proposal. No original
+The current 16 November release includes the 11 November saved-endpoint sensitivity
+analysis, its source-checking script and tests, and updated documentation. No original
 measurement is overwritten. The release-file inventory now covers explicitly tracked
 publication files only; untracked local plans, private notes, and caches are excluded.
 

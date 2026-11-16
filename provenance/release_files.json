@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "38f29db8fba55524db916e557d182b6ef0f7a544a37a710a35b2ae49b2024f47",
-      "bytes": 6693
+      "sha256": "5f65c9b66062a4c40070a093f6da4e04388a6f1a560615bd1a0a618187b3adb8",
+      "bytes": 6458
     },
     {
       "path": "archive/filmfest/results/cluster/1752460/artifacts/behavioral_statistics.json",
@@ -604,13 +604,13 @@
     },
     {
       "path": "docs/README.md",
-      "sha256": "da69ddd3bc2b670589fc6ad0fa3144bf02c0d22b9e7d8becdeb62b0631b56855",
-      "bytes": 1205
+      "sha256": "c03a113ffca6d1d4a1372d5a44e1036ebed45c85c9482548a6f0216d654a7dd4",
+      "bytes": 1157
     },
     {
       "path": "docs/architecture.md",
-      "sha256": "97c59132593b66853218abcdf84ddb9fe1c6edaff8ef6b92210c9e6d84142071",
-      "bytes": 5387
+      "sha256": "51441be66bb1292cbb69918612d6055530afa96636ee97f76b8f0267de35cb51",
+      "bytes": 5389
     },
     {
       "path": "docs/artifact-catalog.md",
@@ -674,28 +674,23 @@
     },
     {
       "path": "docs/provenance.md",
-      "sha256": "44f5fe22667a2d23654fd719f9c1f52218c67843df891b44145dd8914b296139",
-      "bytes": 3266
+      "sha256": "c63f59873c689393ca2cc7d520d32dd7b1600626bab1f530a76a8dd6822ae715",
+      "bytes": 3261
     },
     {
       "path": "docs/release-checks.md",
-      "sha256": "bca6c8ec4530cad791b9aa6b9e891fa83005f6dfe311abe747b14badb7da4e63",
-      "bytes": 2442
+      "sha256": "246ea2a57a5457bc28933fb7b19ce8f883a76e880fb0edd173e65a9e4a9b885d",
+      "bytes": 2369
     },
     {
       "path": "docs/reproducibility.md",
-      "sha256": "a14e7521282ecd80ba9c383671ccbc9836aa707adc14ee972e093063c3dd6491",
-      "bytes": 4632
-    },
-    {
-      "path": "docs/research-brief.md",
-      "sha256": "e3ab3bec67fd6c475d3c09b97222a7d9a4e2bd8b75b1b18e30b8434298b4e9a7",
-      "bytes": 4819
+      "sha256": "e3c568ea09e1ce6fc2f274f34936c5c8a92f17f664717fcdb721889e66bf3662",
+      "bytes": 4376
     },
     {
       "path": "docs/research-connections.md",
-      "sha256": "420d665b0eeb55b9e5bf4b557c96b4479a38fb913d1df5bcae28036b2b6c92e7",
-      "bytes": 2627
+      "sha256": "9ce60b17cddc5cf5207d891306aad660c030f607210faec3d5608ed7f460a5d0",
+      "bytes": 2599
     },
     {
       "path": "docs/research-report.md",
@@ -704,18 +699,13 @@
     },
     {
       "path": "docs/results.md",
-      "sha256": "df15c681721c1799e33b388c9c2fc4c8b740c083c8bcadbda4e585383f3f9f07",
-      "bytes": 7338
+      "sha256": "e66152af7869db2a99a58d1e7c69af60b3b7e7ef7dc1b0ec6706be3248d052be",
+      "bytes": 7340
     },
     {
       "path": "docs/roadmap.md",
-      "sha256": "215f93e2973ece0f1120f18bdce034452ee6dc66badcc165cfa08fe2c533ff99",
-      "bytes": 4773
-    },
-    {
-      "path": "output/pdf/Remembering-Events-Research-Proposal.pdf",
-      "sha256": "c717cced77ad31c88217cbe9b65794a5741f426beccd739ddfe6fb68840704be",
-      "bytes": 125955
+      "sha256": "f39aa0043b247238cd5e948eb4558853013aee6e0ae531e17537ab1167263dc7",
+      "bytes": 4667
     },
     {
       "path": "provenance/export_manifest.json",
@@ -2313,11 +2303,6 @@
       "bytes": 14064
     },
     {
-      "path": "scripts/build_research_brief.py",
-      "sha256": "0b213c5892afe82469715dc49f424548df36d24f3b5fe3fd1d1b84cfd4c076e5",
-      "bytes": 4570
-    },
-    {
       "path": "scripts/compare_resume_checkpoints.py",
       "sha256": "4ebe77bb822016a32bd6dec158497a51a6ffc589a7f99afb5d8046b56e945592",
       "bytes": 3022
@@ -2359,8 +2344,8 @@
     },
     {
       "path": "scripts/verify_research_summary.py",
-      "sha256": "99736a7b6446bf5e912e65e85024a589e94ab672165c9c963215422876c5aedc",
-      "bytes": 2962
+      "sha256": "26829b0f726ab04b9542cd48724633cca8a7d07d00db17568f5e4c25fcff408f",
+      "bytes": 2800
     },
     {
       "path": "src/cmwm/__init__.py",

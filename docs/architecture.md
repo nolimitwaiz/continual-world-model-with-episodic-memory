@@ -1,6 +1,6 @@
 # Architecture and Implementation Status
 
-[Project home](../README.md) · [Short proposal](research-brief.md) · [Results](results.md)
+[Project home](../README.md) · [Research report](research-report.md) · [Results](results.md)
 
 ## In Plain Language
 

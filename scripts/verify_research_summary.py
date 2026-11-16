@@ -17,13 +17,11 @@ def main():
     assert saved == recalculated, "Saved sensitivity report differs from source artifacts"
     assert saved["new_training_runs"] == 0 and saved["test_accessed"] is False
     texts = {name: (ROOT / name).read_text() for name in
-             ("README.md", "docs/results.md", "docs/research-brief.md")}
+             ("README.md", "docs/results.md")}
     for study in ("E2", "E3"):
         for condition in ("fixed_chunks", "random_matched", "oracle_events"):
             expected = f'{saved[study]["groups"]["original_composite"]["means"][condition] * 100:.2f}%'
             for name, content in texts.items():
-                if study == "E2" and condition == "random_matched" and name.endswith("research-brief.md"):
-                    continue
                 assert expected in content, f"Missing verified score {expected}: {name}"
     sherlock = json.loads((ROOT / "results/cluster/1764075/result.json").read_text())
     metric = "subject_macro_best_iou_hit_at_5"
